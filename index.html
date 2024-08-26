@@ -66,7 +66,18 @@
                 <nav>
                     <ul class="navigation__nav">
                         <li class="navigation__nav-item"><a href="#">Решения</a></li>
-                        <li class="navigation__nav-item"><a href="#">Материалы</a></li>
+                        <li class="navigation__nav-item parent">
+                            <a href="#">
+                                Материалы
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </a>
+                            <ul class="navigation__nav-child">
+                                <li class="navigation__nav-childitem active"><a href="#">Руководство пользователя</a></li>
+                                <li class="navigation__nav-childitem"><a href="#">Вопросы</a></li>
+                            </ul>                               
+                        </li>
                         <li class="navigation__nav-item"><a href="#">Новости</a></li>
                         <li class="navigation__nav-item"><a href="#">Партнёры</a></li>
                     </ul>
@@ -74,6 +85,7 @@
                 <div class="navigation__buttons">
                     <a href="#" taget="_blank" class="btn small white">Получить презентацию</a>
                     <a href="#" taget="_blank" class="btn small">Войти</a>
+                    <a href="#" taget="_blank" class="btn small openmenu"><img src="assets/images/openmenu.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -90,156 +102,6 @@
     </div>
 </section>
 
-
-<!-- <div class="container">
-    <div class="index-stock">
-        <a href="#" class="bg">
-            <div class="alert">Акция</div>
-            Анализ полей дронами бесплатно при подключении онлайн
-        </a>
-    </div>
-</div>
-<div class="images-slider">
-    <ul class="images-slider-wrapper">
-        <li class="images-item">
-            <div class="container">
-                <img src="/assets/images/slider.png" alt="" />
-            </div>
-        </li>
-        <li class="images-item">
-            <div class="container">
-                <img src="/assets/images/slider.png" alt="" />
-            </div>
-        </li>
-        <li class="images-item">
-            <div class="container">
-                <img src="/assets/images/slider.png" alt="" />
-            </div>
-        </li>
-        <li class="images-item">
-            <div class="container">
-                <img src="/assets/images/slider.png" alt="" />
-            </div>
-        </li>
-    </ul>
-</div>
-
-<div class="advantages">
-    <div class="container">
-        <div class="two-blocks block-with-slider">
-            <div class="numbers">
-                <ul>
-                    <li>
-                        <div class="title">20+</div>
-                        <div class="text">лет работаем <br />на рынке</div>
-                    </li>
-                    <li>
-                        <div class="title">>10 млн.га</div>
-                        <div class="text">общая площадь полей <br />добавлено в систему</div>
-                    </li>
-                    <li>
-                        <div class="title">300+</div>
-                        <div class="text">подключенных <br />хозяйств</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="index-image">
-                <div class="index-slider-wrapper">
-                    <a href="#" class="index-arrow index-prev">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.291 5.41683L7.70768 10.0002L12.291 14.5835" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
-                    </a>
-                    <a href="#" class="index-arrow index-next">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.70898 5.41683L12.2923 10.0002L7.70898 14.5835" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
-                    </a>
-                    <div class="index-slider">
-                        <ul class="index-wrapper">
-                            <li class="index-item">
-                                <h3>Система управления хозяйством (FMS)</h3>
-                                <p>Предоставляем современную систему управления предприятием, которая включает в себя:</p>
-                                <ul>
-                                    <li>Управление ресурсами и активами</li>
-                                    <li>Финансовый учёт и отчётность</li>
-                                    <li>Планирование и бюджетирование</li>
-                                    <li>Прогнозирование и коррекция производства</li>
-                                    <li>Постановка и контроль исполнения задач</li>
-                                </ul>
-                            </li>
-                            <li class="index-item">
-                                <h3>Аналитика и визуализация данных бизнеса (BI)</h3>
-                                <p>Примените аналитические инструменты для повышения рентабельности и устойчивости вашего агробизнеса:</p>
-                                <ul>
-                                    <li>Оптимизация ресурсов и активов благодаря детальному анализу данных</li>
-                                    <li>Интерактивная визуализация для принятия быстрых и обоснованных решений</li>
-                                    <li>Автоматизированная отчётность</li>
-                                </ul>
-                            </li>
-                            <li class="index-item">
-                                <h3>Мониторинг и контроль транспорта (Телематика)</h3>
-                                <p>Оптимизируйте вашу технику, улучшите учёт расхода топлива и контролируйте маршруты с помощью:</p>
-                                <ul>
-                                    <li>Мониторинга техники в реальном времени</li>
-                                    <li>Анализа вождения и расхода топлива</li>
-                                    <li>Контроля остановок и выезда за пределы полей</li>
-                                    <li>Подсчёта пройденных километров и времени в пути</li>
-                                    <li>Построения оптимальных маршрутов движения</li>
-                                </ul>
-                            </li>
-                            <li class="index-item">
-                                <h3>Скаутинг беспилотниками и распознавание растений</h3>
-                                <p>Повысьте урожайность, оптимизируйте расход гербицидов и контролируйте густоту посевов используя:</p>
-                                <ul>
-                                    <li>Цифровой скаутинг полей дронами и при помощи смартфонов</li>
-                                    <li>Распознавание сорняков</li>
-                                    <li>Подсчёт густоты с-х культур</li>
-                                    <li>Рекомендательную систему</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="index-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="two-blocks mt135">
-            <a href="//www.youtube.com/embed/Fn4VOL861kU" class="video modal">
-                <img src="/assets/images/video.png" alt="" class="height-fill" />
-                <div class="play">
-                    <div class="icon">
-                        <img src="/assets/images/video.svg" alt="" />
-                    </div>
-                    <div class="text">
-                        Смотреть<br />
-                        видео
-                    </div>
-                </div>
-            </a>
-            <div class="icons">
-                <ul>
-                    <li>
-                        <div class="icon"><img src="/assets/images/advantages/1.png" alt="" /></div>
-                        <div class="title">Аккредитация <br />Минкомсвязи России</div>
-                    </li>
-                    <li>
-                        <div class="icon"><img src="/assets/images/advantages/2.png" alt="" /></div>
-                        <div class="title">Исследования осуществляются <br />при поддержке Сколково</div>
-                    </li>
-                    <li>
-                        <div class="icon"><img src="/assets/images/advantages/3.png" alt="" /></div>
-                        <div class="title">Отечественная <br />разработка</div>
-                    </li>
-                    <li>
-                        <div class="icon"><img src="/assets/images/advantages/4.png" alt="" /></div>
-                        <div class="title">Победители конкурсов <br />инноваций и исследований</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <section class="companies">
     <div class="container">
@@ -698,7 +560,7 @@
 </section>
 <div class="container mt90">
     <div class="btn-center">
-        <a href="#" class="btn">Попробовать бесплатно</a>
+        <a href="#" class="btn">Попробовать бесплатно <img src="/assets/images/arrow-button.svg" alt="" /></a>
     </div>
 </div>
 <section class="why mt180">

@@ -48,6 +48,30 @@ $(document).ready(function() {
 
 
 
+    $('.parent > a').on('click', function() {
+        let parent = $(this).parent();
+        if(!parent.hasClass('open')) {
+            parent.addClass('open').siblings().removeClass('open');
+        }
+        else {
+            parent.removeClass('open');
+        }
+        return false;
+    });
+    $(document).mouseup(function(e) {
+        let child = $('.parent ul'),
+            parent = child.parent();
+
+		if(
+            !child.is(e.target) && 
+            child.has(e.target).length === 0 && 
+            !$(e.target).parent().hasClass('open')
+        ) {
+            parent.removeClass('open');
+		}
+        return false;
+    });
+
 
 
     if($('.integration').length) {
