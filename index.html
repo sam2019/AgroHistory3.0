@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>История поля</title>
+    <meta name="description" content="Облачный сервис «История поля». Контроль и управление агробизнесом из любой точки Земли" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <!-- <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/lightcase.min.css" />
+    <link rel="stylesheet" href="/assets/css/mycase.min.css" />
+    <link rel="stylesheet" href="/assets/css/screen.min.css" />
+     -->
+    <link rel="stylesheet" href="/assets/css/style.min.css" />
+</head>
+<body>
+<div class="search-form">
+    <div class="container">
+        <form action="/search/" method="get">
+            <input type="text" name="s" placeholder="Поиск по сайту..." />
+            <a href="#" class="closesearch"><img src="/assets/images/cancel.svg" alt="" /></a>
+        </form>
+    </div>
+</div>
+<header class="header">
+    <div class="top fz12">
+        <div class="container">
+            <div class="top__contacts">
+                <div class="top__contacts-phone">
+                    <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+                </div>
+                <div class="top__contacts-email">
+                    <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+                </div>
+            </div>
+            <div class="top__menu">
+                <ul class="top__menu-nav">
+                    <li class="top__menu-item top__menu-search opensearch"><a href="#"><img src="/assets/images/search.svg" alt="Поиск"></a></li>
+                    <li class="top__menu-item"><a href="#">Контакты</a></li>
+                    <li class="top__menu-item"><a href="#">Компания</a></li>
+                    <li class="top__menu-item"><a href="#">Поддержка</a></li>
+                    <li class="top__menu-item"><a href="#">Скачать приложение</a></li>
+                    <li class="top__menu-item top__menu-lang"><a href="#">Ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixedmenu">
+        <div class="container">
+            <div class="navigation">
+                <a href="/" class="logo">
+                    <img src="/assets/images/logo.svg" alt="">
+                    <span>История поля</span>
+                </a>
+                <nav>
+                    <ul class="navigation__nav">
+                        <li class="navigation__nav-item"><a href="#">Решения</a></li>
+                        <li class="navigation__nav-item"><a href="#">Материалы</a></li>
+                        <li class="navigation__nav-item"><a href="#">Новости</a></li>
+                        <li class="navigation__nav-item"><a href="#">Партнёры</a></li>
+                    </ul>
+                </nav>
+                <div class="navigation__buttons">
+                    <a href="#" taget="_blank" class="btn small white">Получить презентацию</a>
+                    <a href="#" taget="_blank" class="btn small">Войти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+<section class="slider">
+    <div class="container slider__text">
+        <h1>Цифровые технологии для роста<br />вашего агробизнеса</h1>
+        <p>Единая облачная платформа и приложение для контроля и автоматизации процессов<br> сельхоз-предприятий с интегрированными системами на базе искусственного интеллекта,<br> позволяющая сократить расходы и увеличить урожайность</p>
+        <div class="slider__text-btn btn-center">
+            <a href="#" class="btn openmodal" data-modal="bid">Попробовать бесплатно <img src="/assets/images/arrow-button.svg" alt="" /></a>
+        </div>
+    </div>
+</section>
+
+
+<!-- <div class="container">
+    <div class="index-stock">
+        <a href="#" class="bg">
+            <div class="alert">Акция</div>
+            Анализ полей дронами бесплатно при подключении онлайн
+        </a>
+    </div>
+</div>
+<div class="images-slider">
+    <ul class="images-slider-wrapper">
+        <li class="images-item">
+            <div class="container">
+                <img src="/assets/images/slider.png" alt="" />
+            </div>
+        </li>
+        <li class="images-item">
+            <div class="container">
+                <img src="/assets/images/slider.png" alt="" />
+            </div>
+        </li>
+        <li class="images-item">
+            <div class="container">
+                <img src="/assets/images/slider.png" alt="" />
+            </div>
+        </li>
+        <li class="images-item">
+            <div class="container">
+                <img src="/assets/images/slider.png" alt="" />
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="advantages">
+    <div class="container">
+        <div class="two-blocks block-with-slider">
+            <div class="numbers">
+                <ul>
+                    <li>
+                        <div class="title">20+</div>
+                        <div class="text">лет работаем <br />на рынке</div>
+                    </li>
+                    <li>
+                        <div class="title">>10 млн.га</div>
+                        <div class="text">общая площадь полей <br />добавлено в систему</div>
+                    </li>
+                    <li>
+                        <div class="title">300+</div>
+                        <div class="text">подключенных <br />хозяйств</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="index-image">
+                <div class="index-slider-wrapper">
+                    <a href="#" class="index-arrow index-prev">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.291 5.41683L7.70768 10.0002L12.291 14.5835" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                    <a href="#" class="index-arrow index-next">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.70898 5.41683L12.2923 10.0002L7.70898 14.5835" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </a>
+                    <div class="index-slider">
+                        <ul class="index-wrapper">
+                            <li class="index-item">
+                                <h3>Система управления хозяйством (FMS)</h3>
+                                <p>Предоставляем современную систему управления предприятием, которая включает в себя:</p>
+                                <ul>
+                                    <li>Управление ресурсами и активами</li>
+                                    <li>Финансовый учёт и отчётность</li>
+                                    <li>Планирование и бюджетирование</li>
+                                    <li>Прогнозирование и коррекция производства</li>
+                                    <li>Постановка и контроль исполнения задач</li>
+                                </ul>
+                            </li>
+                            <li class="index-item">
+                                <h3>Аналитика и визуализация данных бизнеса (BI)</h3>
+                                <p>Примените аналитические инструменты для повышения рентабельности и устойчивости вашего агробизнеса:</p>
+                                <ul>
+                                    <li>Оптимизация ресурсов и активов благодаря детальному анализу данных</li>
+                                    <li>Интерактивная визуализация для принятия быстрых и обоснованных решений</li>
+                                    <li>Автоматизированная отчётность</li>
+                                </ul>
+                            </li>
+                            <li class="index-item">
+                                <h3>Мониторинг и контроль транспорта (Телематика)</h3>
+                                <p>Оптимизируйте вашу технику, улучшите учёт расхода топлива и контролируйте маршруты с помощью:</p>
+                                <ul>
+                                    <li>Мониторинга техники в реальном времени</li>
+                                    <li>Анализа вождения и расхода топлива</li>
+                                    <li>Контроля остановок и выезда за пределы полей</li>
+                                    <li>Подсчёта пройденных километров и времени в пути</li>
+                                    <li>Построения оптимальных маршрутов движения</li>
+                                </ul>
+                            </li>
+                            <li class="index-item">
+                                <h3>Скаутинг беспилотниками и распознавание растений</h3>
+                                <p>Повысьте урожайность, оптимизируйте расход гербицидов и контролируйте густоту посевов используя:</p>
+                                <ul>
+                                    <li>Цифровой скаутинг полей дронами и при помощи смартфонов</li>
+                                    <li>Распознавание сорняков</li>
+                                    <li>Подсчёт густоты с-х культур</li>
+                                    <li>Рекомендательную систему</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="index-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two-blocks mt135">
+            <a href="//www.youtube.com/embed/Fn4VOL861kU" class="video modal">
+                <img src="/assets/images/video.png" alt="" class="height-fill" />
+                <div class="play">
+                    <div class="icon">
+                        <img src="/assets/images/video.svg" alt="" />
+                    </div>
+                    <div class="text">
+                        Смотреть<br />
+                        видео
+                    </div>
+                </div>
+            </a>
+            <div class="icons">
+                <ul>
+                    <li>
+                        <div class="icon"><img src="/assets/images/advantages/1.png" alt="" /></div>
+                        <div class="title">Аккредитация <br />Минкомсвязи России</div>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="/assets/images/advantages/2.png" alt="" /></div>
+                        <div class="title">Исследования осуществляются <br />при поддержке Сколково</div>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="/assets/images/advantages/3.png" alt="" /></div>
+                        <div class="title">Отечественная <br />разработка</div>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="/assets/images/advantages/4.png" alt="" /></div>
+                        <div class="title">Победители конкурсов <br />инноваций и исследований</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<section class="companies">
+    <div class="container">
+        <div class="companies__wrapper">
+            <h2 class="section_h2">
+                Более <span>400 компаний</span> в <span>6 странах</span> мира<br> 
+                развивают своё дело c нами
+            </h2>
+            <div id="companies__slider_1" class="companies__slider mt90 splide">
+                <div class="splide__track">
+                    <ul class="companies__slider-list splide__list">
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название2</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="companies__slider_2" class="companies__slider splide">
+                <div class="splide__track">
+                    <ul class="companies__slider-list splide__list">
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название</span></a></li>
+                        <li class="companies__slider-item splide__slide"><a href="#"><img src="/assets/images/company.svg" alt=""><span>Название2</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="platform mt180">
+    <div class="container">
+        <h2 class="section_h2"><span>Одна платформа</span> решает<br> множество задач</h2>
+        <div class="platform__wrapper mt90">
+            <div class="platform__wrapper-buttons">
+                <ul>
+                    <li class="active"><a data-id="1" href="#"><h5 class="title">Управление хозяйством FMS</h5><span class="desc">Короткое описание для блока в две строки, чтобы хватило.</span></a></li>
+                    <li><a data-id="2" href="#"><h5 class="title">Цифровой скаутинг с БПЛА</h5><span class="desc">Короткое описание для блока в две строки, чтобы хватило.</span></a></li>
+                    <li><a data-id="3" href="#"><h5 class="title">Распознавание и рекомендации</h5><span class="desc">Короткое описание для блока в две строки, чтобы хватило.</span></a></li>
+                    <li><a data-id="4" href="#"><h5 class="title">Автоматизированное планирование</h5><span class="desc">Короткое описание для блока в две строки, чтобы хватило.</span></a></li>
+                    <li><a data-id="5" href="#"><h5 class="title">Мониторинг и контроль техники</h5><span class="desc">Короткое описание для блока в две строки, чтобы хватило.</span></a></li>
+                    <li><a data-id="6" href="#"><h5 class="title">Шестой блок</h5><span class="desc">Короткое описание для блока в две строки, чтобы хватило.</span></a></li>
+                </ul>
+            </div>
+            <div class="platform__wrapper-content">
+                <div class="platform__wrapper-tab active" id="tab_1">
+                    <div class="platform__slider">
+                        <ul class="platform__slider-list">
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item fake"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="platform__wrapper-tab active" id="tab_2">
+                    <div class="platform__slider">
+                        <ul class="platform__slider-list">
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование2</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item fake"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="platform__wrapper-tab active" id="tab_3">
+                    <div class="platform__slider">
+                        <ul class="platform__slider-list">
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item fake"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="platform__wrapper-tab active" id="tab_4">
+                    <div class="platform__slider">
+                        <ul class="platform__slider-list">
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item fake"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="platform__wrapper-tab active" id="tab_5">
+                    <div class="platform__slider">
+                        <ul class="platform__slider-list">
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item fake"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="platform__wrapper-tab active" id="tab_6">
+                    <div class="platform__slider">
+                        <ul class="platform__slider-list">
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item">
+                                <div class="label fz14">Управление хозяйством FMS</div>
+                                <div class="image">
+                                    <img src="/assets/images/platform.svg" alt="">
+                                </div>
+                                <h5>Планирование сезона и бюджетирование</h5>
+                                <p>Место для расположения текста в две или в три строки, который подробно описывает этот кейс и демонстрирует скриншот</p>
+                            </li>
+                            <li class="platform__slider-item fake"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="start mt180">
+    <div class="container">
+        <h2 class="section_h2">Простое начало</h2>
+        <div class="section_description">Поддержка на каждом шаге и быстрое внедрение,<br> консьерж-сервис круглосуточно</div>
+        <div class="start__wrapper mt90">
+            <div class="start__training">
+                <h3>Внедрение и обучение под ключ</h3>
+                <div class="start__training-wrapper">
+                    <div class="start__training-text">
+                        <ul class="start__training-list">
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="start__training-image">
+                        <img src="/assets/images/training.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="start__support">
+                <div class="start__support-text">
+                    <h3>Поддержка</h3>
+                    <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                    <p>Возможно, что тут могут бытькакие-то тезисы списком:</p>
+                    <ul>
+                        <li>Список</li>
+                        <li>Список</li>
+                        <li>Список</li>
+                        <li>Список</li>
+                        <li>Список</li>
+                    </ul>
+                </div>
+                <div class="start__support-time">
+                    <img src="/assets/images/247.svg" alt="">
+                    <div class="fz48">24/7</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="integration mt180">
+    <div class="container">
+        <h2 class="section_h2"><span>Интеграции</span> с внешними системами</h2>
+        <div class="section_description">Защищённый обмен данными с государственными<br> и другими информационными системами</div>
+        <div class="integration__links mt90">
+            <ul class="integration__links-list">
+                <li class="integration__links-item active"><a href="#" data-id="1">1С</a></li>
+                <li class="integration__links-item"><a href="#" data-id="2">ЕФИС ЗНС</a></li>
+                <li class="integration__links-item"><a href="#" data-id="3">ГИС Зерно</a></li>
+                <li class="integration__links-item"><a href="#" data-id="4">Устройства</a></li>
+                <li class="integration__links-item"><a href="#" data-id="5">Техника</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="integration__tabs">
+        <div class="container">
+            <div class="integration__tabs-tab active" id="integration_tab_1">
+                <div class="integration__tabs-wrapper">
+                    <div class="integration__tabs-text">
+                        <ul class="start__training-list">
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="integration__tabs-image">
+                        <img src="/assets/images/integration.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="integration__tabs-tab" id="integration_tab_2">
+                <div class="integration__tabs-wrapper">
+                    <div class="integration__tabs-text">
+                        <ul class="start__training-list">
+                            <li class="start__training-item">
+                                <h5>Заголовок1</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="integration__tabs-image">
+                        <img src="/assets/images/integration.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="integration__tabs-tab" id="integration_tab_3">
+                <div class="integration__tabs-wrapper">
+                    <div class="integration__tabs-text">
+                        <ul class="start__training-list">
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="integration__tabs-image">
+                        <img src="/assets/images/integration.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="integration__tabs-tab" id="integration_tab_4">
+                <div class="integration__tabs-wrapper">
+                    <div class="integration__tabs-text">
+                        <ul class="start__training-list">
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="integration__tabs-image">
+                        <img src="/assets/images/integration.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="integration__tabs-tab" id="integration_tab_5">
+                <div class="integration__tabs-wrapper">
+                    <div class="integration__tabs-text">
+                        <ul class="start__training-list">
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                            <li class="start__training-item">
+                                <h5>Заголовок</h5>
+                                <p>Место для расположения текста-описания этого блока поддержки, которое разбито на несколько абзацев и должно ёмко рассказать про возможности.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="integration__tabs-image">
+                        <img src="/assets/images/integration.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mt90">
+    <div class="btn-center">
+        <a href="#" class="btn">Попробовать бесплатно</a>
+    </div>
+</div>
+<section class="why mt180">
+    <div class="container">
+        <h2 class="section_h2">Почему нам доверяют</h2>
+        <div class="section_description">Здесь описываем тезисно, что мы такие хорошие и ниже почему</div>
+        <div class="why__wrapper mt90">
+            <ul class="why__wrapper-list">
+                <li class="why__wrapper-item">
+                    <div class="text">
+                        <div class="title">
+                            <h3>20 лет</h3>
+                            <h5>работаем на рынке</h5>
+                        </div>
+                        <p>Место для расположения текста-описания этого блока из нескольких строк. Должно ёмко рассказать про этот мини-блок.</p>
+                    </div>
+                </li>
+                <li class="why__wrapper-item big">
+                    <div class="text">
+                        <div class="title">
+                            <h3>Российское ПО</h3>
+                            <h5>с аккредитацией</h5>
+                        </div>
+                        <p>Место для расположения текста-описания этого блока из нескольких строк. Должно ёмко рассказать про этот мини-блок.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/assets/images/why.svg" alt="">
+                    </div>
+                </li>
+                <li class="why__wrapper-item big">
+                    <div class="text">
+                        <div class="title">
+                            <h3>Безопасное</h3>
+                            <h5>хранение данных</h5>
+                        </div>
+                        <p>Место для расположения текста-описания этого блока из нескольких строк. Должно ёмко рассказать про этот мини-блок.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/assets/images/why.svg" alt="">
+                    </div>
+                </li>
+                <li class="why__wrapper-item">
+                    <div class="text">
+                        <div class="title">
+                            <h3>Обновления</h3>
+                            <h5>еженедельно</h5>
+                        </div>
+                        <p>Место для расположения текста-описания этого блока из нескольких строк. Должно ёмко рассказать про этот мини-блок.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="for mt180">
+    <div class="white">
+        <div class="container">
+            <h2 class="section_h2">Для кого наша платформа</h2>
+            <div class="section_description">Тут показываем блоками, кто наши пользователи</div>
+            <div class="for__wrapper mt90">
+                <ul class="for__wrapper-list">
+                    <li class="for__wrapper-item">
+                        <img src="/assets/images/for.jpg" alt="">
+                        <div class="for__wrapper-bg">
+                            <a href="#" class="for__wrapper-play"></a>
+                            <h4>Сельскохозяйственные товаропроизводители</h4>
+                        </div>
+                    </li>
+                    <li class="for__wrapper-item">
+                        <img src="/assets/images/for.svg" alt="">
+                        <div class="for__wrapper-bg">
+                            <h4>Поставщики семян, удобрений и СЗР</h4>
+                        </div>
+                    </li>
+                    <li class="for__wrapper-item">
+                        <img src="/assets/images/for.svg" alt="">
+                        <div class="for__wrapper-bg">
+                            <h4>Независимые эксперты и консультанты</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news mt-180">
+    <div class="white">
+        <div class="container">
+            <h2 class="section_h2">Новости и обновления</h2>
+            <div class="section_description">Новые функции, партнёрства, СМИ, успехи и другие новости компании</div>
+            <div class="news__wrapper mt90">
+                <ul class="news__wrapper-list">
+                    <li class="news__wrapper-item">
+                        <a href="#">
+                            <img src="/assets/images/news.svg" alt="">
+                            <h4>Заголовок новости</h4>
+                            <span class="date">4 Сен 2023</span>
+                            <span class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</span>
+                        </a>
+                    </li>
+                    <li class="news__wrapper-item">
+                        <a href="#">
+                            <img src="/assets/images/news.svg" alt="">
+                            <h4>Заголовок новости</h4>
+                            <span class="date">4 Сен 2023</span>
+                            <span class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</span>
+                        </a>
+                    </li>
+                    <li class="news__wrapper-item">
+                        <a href="#">
+                            <img src="/assets/images/news.svg" alt="">
+                            <h4>Заголовок новости</h4>
+                            <span class="date">4 Сен 2023</span>
+                            <span class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt90">
+                <div class="btn-center">
+                    <a href="#" class="btn grey">Показать все новости</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="form green-bg-lines">
+    <div class="container">
+        <h2 class="section_h2">Хотите узнать больше?</h2>
+        <div class="section_description">Пришлем презентацию, проведем демонстрацию решения<br> и ответим на все вопросы</div>
+        <div class="form-wrapper mt90">
+            <div class="res">
+                <div class="res-error">
+                    <div class="icon">
+                        <img src="/assets/images/form-error.svg" alt="">
+                    </div>
+                    <div class="title">Форма не отправлена</div>
+                    <div class="text">Повторите отправку позже <br>или свяжитесь с нами по номеру <br>телефона +7 (495) 788-59-56</div>
+                </div>
+                <div class="res-success">
+                    <div class="icon">
+                        <img src="/assets/images/form-success.svg" alt="">
+                    </div>
+                    <div class="title">Форма успешно отправлена</div>
+                    <div class="text">Менеджер нашей компании <br>скоро свяжется с вами</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <input name="f_name" type="text" placeholder="ФИО *" autocomplete="off">
+                <div class="error-label">Обязательно для заполнения</div>
+            </div>
+            <div class="form-item">
+                <input name="f_phone" class="phone-input" type="text" placeholder="Телефон *" autocomplete="off" inputmode="text">
+                <div class="error-label">Обязательно для заполнения</div>
+            </div>
+            <div class="form-item">
+                <input name="f_company" type="text" placeholder="Компания *" autocomplete="off" inputmode="text">
+                <div class="error-label">Обязательно для заполнения</div>
+            </div>
+            <div class="form-item">
+                <input name="f_email" class="email-input" type="text" placeholder="Рабочая почта *" autocomplete="off" inputmode="text">
+                <div class="error-label">Обязательно для заполнения</div>
+            </div>
+            <div class="form-item">
+                <input name="f_area" type="number" placeholder="Площадь полей (га)" autocomplete="off" inputmode="numeric">
+            </div>
+            <div class="form-item button">
+                <button type="submit" class="btn" id="test">Отправить заявку <img src="/assets/images/arrow-button.svg" alt=""></button>
+            </div>
+            <div class="form-item personal">Отправляя заявку вы соглашаетесь <br>на <a href="#">Обработку персональных данных</a></div>
+        </div>
+    </div>
+</section>
+
+</main>
+<footer class="footer mt150">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper-info">
+                <div class="footer__wrapper-logo">
+                    <a href="/" class="logo">
+                        <img src="/assets/images/logo.svg" alt="">
+                        <span>История поля</span>
+                    </a>
+                </div>
+                <div class="footer__wrapper-copyright">
+                    ©2024, ООО «ГеомирАгро»
+                </div>
+            </div>
+            <div class="footer__wrapper-navigation">
+                <div class="footer__navigation">
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <span>Материалы</span>
+                            <ul>
+                                <li><a href="#">Руководство пользователя</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <span>Компания</span>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="#">Партнёры</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <span>Другое</span>
+                            <ul>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts mt150">
+                    <div class="footer__contacts-phone">
+                        <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+                    </div>
+                    <div class="footer__contacts-email">
+                        <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+                    </div>
+                    <div class="footer__contacts-social">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="/assets/images/yt.svg" alt=""></a></li>
+                            <li><a href="#" target="_blank"><img src="/assets/images/tg.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- <div class="overlay">
+    <div class="modal-block" id="bid">
+        <a href="#" class="closemodal">
+            <img src="/assets/images/cancel.svg" alt="" />
+        </a>
+        <div class="block-title">
+            <h2>Получить бесплатный доступ</h2>
+            <p>Настроим тестовый доступ для вашей компании <br />с учётом потребностей бизнеса</p>
+        </div>
+        <div class="form">
+            <div class="res">
+                <div class="res-error">
+                    <div class="icon">
+                        <img src="/assets/images/form-error.svg" alt="" />
+                    </div>
+                    <div class="title">Форма не отправлена</div>
+                    <div class="text">Повторите отправку позже <br />или свяжитесь с нами по номеру <br />телефона +7 (495) 788-59-56</div>
+                </div>
+                <div class="res-success">
+                    <div class="icon">
+                        <img src="/assets/images/form-success.svg" alt="" />
+                    </div>
+                    <div class="title">Форма успешно отправлена</div>
+                    <div class="text">Менеджер нашей компании <br />скоро свяжется с вами</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <input name="f_name" type="text" placeholder="ФИО *" autocomplete="off" />
+                <div class="error-label">ФИО обязательно</div>
+            </div>
+            <div class="form-item">
+                <input name="f_email" class="email-input" type="text" placeholder="Ваша электронная почта *" autocomplete="off" />
+                <div class="error-label">Email обязательно</div>
+            </div>
+            <div class="form-item button">
+                <button type="submit" class="btn">Отправить заявку <img src="/assets/images/arrow-button.svg" alt="" /></button>
+            </div>
+            <div class="form-item yes">Нажимая на кнопку вы соглашаетесь с политикой <a href="#">обработки персональных данных</a></div>
+        </div>
+    </div>
+    <div class="modal-block" id="video">
+        <a href="#" class="closemodal">
+            <img src="/assets/images/cancel-white.svg" alt="" />
+        </a>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div> -->
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/flexmenu.min.js"></script>
+<script src="/assets/js/lightcase.min.js"></script>
+<script src="/assets/js/swiper-bundle.min.js"></script>
+<script src="/assets/js/jquery.maskedinput.min.js"></script>
+<script src="/assets/js/splide-extension-auto-scroll.min.js"></script>
+<script src="/assets/js/splide.min.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>
