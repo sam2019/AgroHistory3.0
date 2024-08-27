@@ -125,6 +125,7 @@ $(document).ready(function() {
     menuScroll();
     $(window).scroll(function() {
         menuScroll();
+        $('.search-form').removeClass('open');
     });
 });
 
