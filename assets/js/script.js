@@ -133,6 +133,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         menuScroll();
         $('.search-form').removeClass('open');
+        $('.parent').removeClass('open');
     });
 });
 
