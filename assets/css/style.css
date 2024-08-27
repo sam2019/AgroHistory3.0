@@ -2507,11 +2507,6 @@ table th {
   text-decoration: none;
 }
 
-section,
-footer {
-  display: none;
-}
-
 @media (max-width: 1359px) {
   .header .navigation .navigation__buttons .white {
     display: none;
