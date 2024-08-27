@@ -86,39 +86,46 @@ $(document).ready(function() {
             return false;
         });
     }
-    if($('.platform__wrapper-tab').length) {
-        var platform = [];
-        $('.platform__slider').each(function(i, element) {
-            
-            var id = $(element).parent().attr('id').replace('tab_', '');
+    if($('.platform__wrapper').length) {
 
-            platform[id] = new Swiper(element, {
-                wrapperClass: 'platform__slider-list',
-                slideClass: 'platform__slider-item',
-                loop: false,
-                spaceBetween: 20,
-                slidesPerView: 'auto',
-                normalizeSlideIndex: false
-            });
+        const platform = new Swiper('.platform__slider', {
+            wrapperClass: 'platform__slider-list',
+            slideClass: 'platform__slider-item',
+            loop: false,
+            spaceBetween: 20,
+            slidesPerView: 'auto',
+            normalizeSlideIndex: false,
+            init: false,
+        });
+
+        platform.on('slideChange', function() {
+            let slider = $('.platform__slider .swiper-slide-active').data('slider'),
+                button = $('.platform__wrapper-buttons a[data-id=' + slider + ']').parent();
+            if(!button.hasClass('active')) {
+                button.addClass('active').siblings().removeClass('active');
+            }
         });
         
-        $('.platform__wrapper-tab').first().siblings().removeClass('active');
+        platform.init();
 
-        var current_id = $('.platform__wrapper-tab').first().attr('id').replace('tab_', '');
-
-        platform[current_id].update();
         $('.platform__wrapper-buttons a').on('click', function() {
-            var that = $(this),
-                tab = that.data('id'),
-                li = that.parent();
-            li.addClass('active').siblings().removeClass('active');
-            $('#tab_' + tab).addClass('active').siblings().removeClass('active');
             
-            platform[tab].update();
-            platform[tab].slideTo(0, 0);
-            
+            if(!$(this).parent().hasClass('active')) {
+
+                let id = $(this).data('id'),
+                    next = $('.platform__slider-item[data-slider=' + id + ']').first().index();
+                platform.slideTo(next);
+                $(this).parent().addClass('active').siblings().removeClass('active');
+            }
+
             return false;
         });
+
+        // $('.platform__wrapper-tab').first().siblings().removeClass('active');
+
+        // var current_id = $('.platform__wrapper-tab').first().attr('id').replace('tab_', '');
+
+        
     }
 
 
