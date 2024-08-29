@@ -2887,10 +2887,6 @@ table th {
     margin-top: 40px;
   }
 
-  .header .logo span {
-    display: none;
-  }
-
   .header .top .top__contacts {
     gap: 4px;
   }
@@ -2937,6 +2933,17 @@ table th {
     padding: 24px 0;
   }
 
+  .for .for__wrapper .for__wrapper-list .for__wrapper-item .for__wrapper-bg h4 {
+    word-wrap: break-word;
+    width: 100%;
+  }
+
+  .for .for__wrapper .for__wrapper-list .for__wrapper-item img {
+    height: 412px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .for .for__wrapper .for__wrapper-list .for__wrapper-item {
     width: 257px;
   }
@@ -2959,5 +2966,11 @@ table th {
 
   .footer .footer__wrapper .footer__wrapper-navigation .footer__navigation .footer__navigation-list .footer__navigation-item ul li {
     padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .header .logo span {
+    display: none;
   }
 }
