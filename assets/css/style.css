@@ -1777,8 +1777,9 @@ table th {
 
 .platform .platform__wrapper .platform__wrapper-content .platform__slider-list li {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 630px;
-          flex: 0 0 630px;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 630px;
   padding: 47px 48px;
   border-radius: 12px;
   background: #FFFFFF url(../images/grid.svg) repeat-x top center;
@@ -2591,9 +2592,7 @@ table th {
   }
 
   .platform .platform__wrapper .platform__wrapper-content .platform__slider-list li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 623px;
-            flex: 0 0 623px;
+    width: 623px;
   }
 
   .start .start__wrapper .start__training .start__training-wrapper .start__training-image {
@@ -2717,10 +2716,16 @@ table th {
     width: 100%;
   }
 
+  .platform .platform__wrapper .platform__wrapper-content .platform__slider {
+    width: 100%;
+  }
+
+  .platform .platform__wrapper .platform__wrapper-content:after {
+    display: none;
+  }
+
   .platform .platform__wrapper .platform__wrapper-content .platform__slider-list li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 443px;
-            flex: 0 0 443px;
+    width: 443px;
   }
 
   .platform .platform__wrapper .platform__wrapper-content .platform__slider-list li .image img {
@@ -2910,9 +2915,7 @@ table th {
   }
 
   .platform .platform__wrapper .platform__wrapper-content .platform__slider-list li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 257px;
-            flex: 0 0 257px;
+    width: 257px;
     padding: 28px;
   }
 

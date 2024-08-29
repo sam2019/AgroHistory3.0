@@ -108,21 +108,33 @@ $(document).ready(function() {
             spaceBetween: 20,
             slidesPerView: 'auto',
             normalizeSlideIndex: false,
-            init: false,
-        });
-
-        platformTask.on('slideChangeTransitionEnd', function() {
-            let slider = $('.platform__slider .swiper-slide-active').data('slider'),
-                button = $('.platform__wrapper-buttons a[data-id=' + slider + ']').parent();
-            if(!button.hasClass('active')) {
-                button.addClass('active').siblings().removeClass('active');
-                if(platformButtons) {
-                    platformButtons.slideTo(button.index());
+            on: {
+                slideChangeTransitionEnd: function() {
+                    let slider = $('.platform__slider .swiper-slide-active').data('slider'),
+                        button = $('.platform__wrapper-buttons a[data-id=' + slider + ']').parent();
+                    if(!button.hasClass('active')) {
+                        button.addClass('active').siblings().removeClass('active');
+                        if(platformButtons) {
+                            platformButtons.slideTo(button.index(), 300);
+                        }
+                    }
                 }
             }
+            // init: false,
         });
+
+        // platformTask.on('slideChangeTransitionEnd', function() {
+        //     let slider = $('.platform__slider .swiper-slide-active').data('slider'),
+        //         button = $('.platform__wrapper-buttons a[data-id=' + slider + ']').parent();
+        //     if(!button.hasClass('active')) {
+        //         button.addClass('active').siblings().removeClass('active');
+        //         if(platformButtons) {
+        //             platformButtons.slideTo(button.index());
+        //         }
+        //     }
+        // });
         
-        platformTask.init();
+        // platformTask.init();
 
         $('.platform__wrapper-buttons a').on('click', function() {
             
@@ -143,10 +155,6 @@ $(document).ready(function() {
             return false;
         });
     }
-
-    // $(window).on('resize', function() {
-    //     platformTask.update();
-    // });
 });
 
 let platform = null,
