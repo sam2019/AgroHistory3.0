@@ -2624,6 +2624,11 @@ table th {
     line-height: 36px;
   }
 
+  .companies h2.section_h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .btn.openmenu {
     display: -webkit-box;
     display: -ms-flexbox;
