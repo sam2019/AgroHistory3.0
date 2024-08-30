@@ -850,7 +850,7 @@ h2 {
 }
 
 h2 span {
-  color: #47B881;
+  color: #339E75;
 }
 
 h2.section_h2 {
@@ -998,7 +998,7 @@ table th {
 }
 
 .btn {
-  background-color: #47B881;
+  background-color: #339E75;
   padding: 12px 24px;
   border-radius: 24px;
   display: -webkit-box;
@@ -1127,7 +1127,7 @@ table th {
 }
 
 .green-bg-lines {
-  background: #238468 url(../images/lines-green.png) no-repeat top center/1146px;
+  background: #166A5B url(../images/lines-green.png) no-repeat top center/1146px;
 }
 
 .mt90 {
@@ -1435,13 +1435,13 @@ table th {
 }
 
 .parent.open > a {
-  color: #47B881;
+  color: #339E75;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .parent.open > a > svg path {
-  stroke: #47B881;
+  stroke: #339E75;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1478,7 +1478,7 @@ table th {
   height: 14px;
   left: -31px;
   top: calc(50% - 7px);
-  background: #47B881;
+  background: #339E75;
 }
 
 .submenu li.active:before {
@@ -1489,7 +1489,7 @@ table th {
   height: 14px;
   left: -31px;
   top: calc(50% - 7px);
-  background: #47B881;
+  background: #339E75;
   opacity: 0.8;
   -webkit-filter: blur(7px);
           filter: blur(7px);
@@ -1605,7 +1605,7 @@ table th {
 }
 
 .mobilemenu .mobilemenu__nav .mobilemenu__nav-item.open > a {
-  color: #47B881;
+  color: #339E75;
 }
 
 .mobilemenu .mobilemenu__nav .mobilemenu__nav-item .submenu {
@@ -1751,11 +1751,11 @@ table th {
 }
 
 .header .navigation .navigation__nav a:hover {
-  color: #47B881;
+  color: #339E75;
 }
 
 .header .navigation .navigation__nav a:hover svg path {
-  stroke: #47B881;
+  stroke: #339E75;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -1907,7 +1907,7 @@ table th {
 
 .platform .platform__wrapper .platform__wrapper-buttons ul li.active:before {
   content: "";
-  background-color: #47B881;
+  background-color: #339E75;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1920,7 +1920,7 @@ table th {
 
 .platform .platform__wrapper .platform__wrapper-buttons ul li.active:after {
   content: "";
-  background-color: #47B881;
+  background-color: #339E75;
   width: 20px;
   height: 20px;
   border-radius: 10px;
@@ -2075,7 +2075,7 @@ table th {
 
 .start .start__wrapper .start__training .start__training-wrapper .start__training-list .start__training-item h5:before {
   content: "";
-  background-color: #47B881;
+  background-color: #339E75;
   position: absolute;
   width: 10px;
   height: 10px;
@@ -2088,7 +2088,7 @@ table th {
 
 .start .start__wrapper .start__training .start__training-wrapper .start__training-list .start__training-item h5:after {
   content: "";
-  background-color: #47B881;
+  background-color: #339E75;
   width: 10px;
   height: 10px;
   border-radius: 10px;
@@ -2142,7 +2142,7 @@ table th {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-  color: #47B881;
+  color: #339E75;
 }
 
 .integration .integration__links .integration__links-list {
@@ -2176,7 +2176,7 @@ table th {
 
 .integration .integration__links .integration__links-list .integration__links-item.active:before {
   content: "";
-  background-color: #47B881;
+  background-color: #339E75;
   position: absolute;
   width: 20px;
   height: 20px;
@@ -2192,7 +2192,7 @@ table th {
 
 .integration .integration__links .integration__links-list .integration__links-item.active:after {
   content: "";
-  background-color: #47B881;
+  background-color: #339E75;
   width: 20px;
   height: 20px;
   border-radius: 10px;
@@ -2326,7 +2326,7 @@ table th {
 }
 
 .why .why__wrapper .why__wrapper-list .why__wrapper-item .text h3 {
-  color: #47B881;
+  color: #339E75;
   margin-bottom: 4px;
 }
 
@@ -2446,7 +2446,7 @@ table th {
 }
 
 .news .news__wrapper .news__wrapper-list .news__wrapper-item a:hover h4 {
-  color: #47B881;
+  color: #339E75;
 }
 
 .form {
@@ -2466,7 +2466,6 @@ table th {
 
 .footer .footer__wrapper {
   padding-bottom: 40px;
-  border-top: 2px solid #F3F3F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2590,9 +2589,7 @@ table th {
 
 .footer .footer__mobile {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2772,7 +2769,7 @@ table th {
 }
 
 .error404 p a {
-  color: #72D49B;
+  color: #47B881;
   text-decoration: none;
 }
 
@@ -3064,6 +3061,12 @@ table th {
 
   .footer .footer__wrapper .footer__wrapper-navigation .footer__contacts {
     display: none;
+  }
+
+  .footer .footer__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

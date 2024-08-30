@@ -93,7 +93,7 @@ $(document).ready(function() {
         let platformTask = new Swiper('.platform__slider', {
             wrapperClass: 'platform__slider-list',
             slideClass: 'platform__slider-item',
-            loop: false,
+            loop: true,
             spaceBetween: 20,
             slidesPerView: 'auto',
             normalizeSlideIndex: false,
@@ -153,7 +153,7 @@ $(document).ready(function() {
         arrows: false,
         pagination: false,
         autoScroll: {
-            speed: 1,
+            speed: 0.6,
         },
     });
     splide1.mount(window.splide.Extensions);
@@ -165,7 +165,7 @@ $(document).ready(function() {
         arrows: false,
         pagination: false,
         autoScroll: {
-            speed: -1,
+            speed: -0.6,
         },
     });
     splide2.mount(window.splide.Extensions);
