@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>История поля</title>
+    <meta name="description" content="Облачный сервис «История поля». Контроль и управление агробизнесом из любой точки Земли" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+<body class="">
+<div class="search-form">
+    <div class="container">
+        <form action="/search/" method="get">
+            <input type="text" name="s" placeholder="Поиск по сайту..." />
+            <a href="#" class="closesearch"><img src="assets/images/cancel.svg" alt="" /></a>
+        </form>
+    </div>
+</div>
+<div class="mobilemenu">
+    <div class="container">
+        <div class="mobilemenu__search">
+            <form action="/search/" method="get">
+                <input type="text" name="s" placeholder="Поиск по сайту..." />
+                <button type="submit"><img src="assets/images/search.svg" alt="Поиск"></button>
+            </form>
+        </div>
+        <ul class="mobilemenu__nav">
+            <li class="mobilemenu__nav-item"><a href="#">Решения</a></li>
+            <li class="mobilemenu__nav-item parent">
+                <a href="#">
+                    Материалы
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </a>
+                <ul class="mobilemenu__nav-child submenu">
+                    <li class="mobilemenu__nav-childitem active"><a href="#">Руководство пользователя</a></li>
+                    <li class="mobilemenu__nav-childitem"><a href="#">Вопросы</a></li>
+                </ul>                               
+            </li>
+            <li class="mobilemenu__nav-item"><a href="news.html">Новости</a></li>
+            <li class="mobilemenu__nav-item"><a href="dealers.html">Партнёры</a></li>
+            <li class="mobilemenu__nav-item"><a href="contacts">Контакты</a></li>
+            <li class="mobilemenu__nav-item parent">
+                <a href="#">
+                    Компания
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="submenu">
+                    <li class="active"><a href="#">Руководство пользователя</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                </ul> 
+            </li>
+            <li class="mobilemenu__nav-item"><a href="#">Поддержка</a></li>
+            <li class="mobilemenu__nav-item"><a href="download.html">Скачать приложение</a></li>
+        </ul>
+        <div class="mobilemenu__buttons">
+            <a href="#" taget="_blank" class="btn small">Войти</a>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="top fz12">
+        <div class="container">
+            <div class="top__contacts">
+                <div class="top__contacts-phone">
+                    <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+                </div>
+                <div class="top__contacts-email">
+                    <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+                </div>
+            </div>
+            <div class="top__menu">
+                <ul class="top__menu-nav">
+                    <li class="top__menu-item top__menu-search opensearch"><a href="#"><img src="assets/images/search.svg" alt="Поиск"></a></li>
+                    <li class="top__menu-item"><a href="#">Контакты</a></li>
+                    <li class="top__menu-item parent">
+                        <a href="#">
+                            Компания
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="submenu">
+                            <li class="active"><a href="#">Руководство пользователя</a></li>
+                            <li><a href="#">Вопросы</a></li>
+                        </ul> 
+                    </li>
+                    <li class="top__menu-item"><a href="#">Поддержка</a></li>
+                    <li class="top__menu-item"><a href="#">Скачать приложение</a></li>
+                    <li class="top__menu-item top__menu-lang parent">
+                        <a href="#">
+                            Ru
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="submenu">
+                            <li class="active"><a href="#">Ru</a></li>
+                            <li><a href="#">En</a></li>
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixedmenu">
+        <div class="container">
+            <div class="navigation">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.svg" alt="">
+                    <span>История поля</span>
+                </a>
+                <nav>
+                    <ul class="navigation__nav">
+                        <li class="navigation__nav-item"><a href="#">Решения</a></li>
+                        <li class="navigation__nav-item parent">
+                            <a href="#">
+                                Материалы
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </a>
+                            <ul class="navigation__nav-child submenu">
+                                <li class="navigation__nav-childitem active"><a href="#">Руководство пользователя</a></li>
+                                <li class="navigation__nav-childitem"><a href="#">Вопросы</a></li>
+                            </ul>                               
+                        </li>
+                        <li class="navigation__nav-item"><a href="news.html">Новости</a></li>
+                        <li class="navigation__nav-item"><a href="dealers.html">Партнёры</a></li>
+                    </ul>
+                </nav>
+                <div class="navigation__buttons">
+                    <a href="#" taget="_blank" class="btn small white">Получить презентацию</a>
+                    <a href="#" taget="_blank" class="btn small">Войти</a>
+                    <a href="#" taget="_blank" class="btn small openmenu"><span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+
+<div class="container mt36">
+    <div class="breadcrumbs">
+    <ul>
+        
+            <li><a href="/">Главная</a></li>
+        
+            <li><a href="/news.html">Новости</a></li>
+        
+    </ul>
+</div>
+    <div class="title-with-button">
+        <h1>Новости</h1>
+        <a href="#" class="opensidebar">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7292 6.41675C16.7292 8.31523 15.1902 9.85425 13.2917 9.85425C11.3932 9.85425 9.85421 8.31523 9.85421 6.41675C9.85421 4.51827 11.3932 2.97925 13.2917 2.97925C15.1902 2.97925 16.7292 4.51827 16.7292 6.41675ZM13.2917 8.47925C14.4308 8.47925 15.3542 7.55583 15.3542 6.41675C15.3542 5.27766 14.4308 4.35425 13.2917 4.35425C12.1526 4.35425 11.2292 5.27766 11.2292 6.41675C11.2292 7.55583 12.1526 8.47925 13.2917 8.47925Z" fill="#1C1C1F"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.27087 15.5834C5.27087 17.4819 6.8099 19.0209 8.70838 19.0209C10.6069 19.0209 12.1459 17.4819 12.1459 15.5834C12.1459 13.6849 10.6069 12.1459 8.70837 12.1459C6.8099 12.1459 5.27087 13.6849 5.27087 15.5834ZM8.70838 17.6459C7.56929 17.6459 6.64587 16.7225 6.64587 15.5834C6.64587 14.4443 7.56929 13.5209 8.70838 13.5209C9.84746 13.5209 10.7709 14.4443 10.7709 15.5834C10.7709 16.7225 9.84746 17.6459 8.70838 17.6459Z" fill="#1C1C1F"/>
+                <path d="M13.0625 15.5454C13.0625 15.1657 13.3703 14.8579 13.75 14.8579H20.1667C20.5464 14.8579 20.8542 15.1657 20.8542 15.5454C20.8542 15.9251 20.5464 16.2329 20.1667 16.2329H13.75C13.3703 16.2329 13.0625 15.9251 13.0625 15.5454Z" fill="#1C1C1F"/>
+                <path d="M8.25004 5.69122C8.62974 5.69122 8.93754 5.99903 8.93754 6.37872C8.93754 6.75842 8.62974 7.06623 8.25004 7.06623L1.83337 7.06622C1.45368 7.06622 1.14587 6.75842 1.14587 6.37872C1.14587 5.99903 1.45368 5.69122 1.83337 5.69122H8.25004Z" fill="#1C1C1F"/>
+                <path d="M1.14587 15.5454C1.14587 15.1657 1.45368 14.8579 1.83337 14.8579H3.66671C4.0464 14.8579 4.35421 15.1657 4.35421 15.5454C4.35421 15.9251 4.0464 16.2329 3.66671 16.2329H1.83337C1.45368 16.2329 1.14587 15.9251 1.14587 15.5454Z" fill="#1C1C1F"/>
+                <path d="M20.1667 5.69122C20.5464 5.69122 20.8542 5.99903 20.8542 6.37872C20.8542 6.75842 20.5464 7.06623 20.1667 7.06623H18.3334C17.9537 7.06623 17.6459 6.75842 17.6459 6.37872C17.6459 5.99903 17.9537 5.69122 18.3334 5.69122H20.1667Z" fill="#1C1C1F"/>
+            </svg>                
+        </a>
+    </div>
+    <div class="page mt36">
+        <div class="news">
+            <div class="news-wrapper">
+                <ul class="news-list">
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/novelty.html">
+                            <div class="image"><img src="/assets/images/index-desktop.png" alt="Заголовок новости" /></div>
+                            <h4 class="title">Заголовок новости</h4>
+                            <div class="date">4 Сен 2023</div>
+                            <div class="desc">В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет
+                                непонятным смыслом и придаст неповторимый колорит советских времен.</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pagination mt64">
+                    <ul>
+                        <li><a href="#"><img src="/assets/images/arrow-pagination-left.svg" alt="<" /> <span class="word">Назад</span></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><span>...</span></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#"><span class="word">Вперёд</span> <img src="/assets/images/arrow-pagination-right.svg" alt=">" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar">
+                <ul class="links">
+                    <li><a href="#">Все</a></li>
+                    <li class="active"><a href="#">Обновления системы</a></li>
+                    <li><a href="#">Возможности и функции</a></li>
+                    <li><a href="#">Интервью</a></li>
+                    <li><a href="#">Выставки и конференции</a></li>
+                    <li><a href="#">Награды</a></li>
+                    <li><a href="#">Выступления</a></li>
+                    <li><a href="#">Нейронная сеть</a></li>
+                    <li><a href="#">Распознавание</a></li>
+                    <li><a href="#">СМИ о нас</a></li>
+                </ul>
+                <ul class="tags">
+                    <li><a href="#">Тег</a></li>
+                    <li><a href="#">Тег</a></li>
+                    <li><a href="#">Тег</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="plan-index-form mt135">
+    <div class="index-form">
+        <div class="two-blocks">
+            <div class="left">
+                <h2>Подписаться <br />на новости</h2>
+                <p>Раз в месяц мы направляем информацию об обновлениях платформы и новости.<br /><br /><br />
+                    Без спама и рекламы.</p>
+            </div>
+            <div class="right">
+                <div class="form">
+                    <div class="res">
+                        <div class="res-error">
+                            <div class="icon">
+                                <img src="/assets/images/form-error.svg" alt="" />
+                            </div>
+                            <div class="title">Форма не отправлена</div>
+                            <div class="text">Повторите отправку позже <br />или свяжитесь с нами по номеру <br />телефона +7 (495) 788-59-56</div>
+                        </div>
+                        <div class="res-success">
+                            <div class="icon">
+                                <img src="/assets/images/form-success.svg" alt="" />
+                            </div>
+                            <div class="title">Форма успешно отправлена</div>
+                            <div class="text">Подтвердите подписку на новости <br />в своей электронной почте</div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <input name="f_email" class="email-input" type="text" placeholder="Ваша электронная почта *" autocomplete="off" />
+                        <div class="error-label">Email обязательно</div>
+                    </div>
+                    <div class="form-item button">
+                        <button type="submit" class="btn">Подписаться <img src="/assets/images/arrow-button.svg" alt="" /></button>
+                    </div>
+                    <div class="form-item personal">Отправляя заявку вы соглашаетесь <br />на <a href="#">Обработку персональных данных</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</main>
+<footer class="footer mt150">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper-info">
+                <div class="footer__wrapper-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.svg" alt="">
+                        <span>История поля</span>
+                    </a>
+                </div>
+                <div class="footer__wrapper-copyright">
+                    ©2024, ООО «ГеомирАгро»
+                </div>
+            </div>
+            <div class="footer__wrapper-navigation">
+                <div class="footer__navigation">
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <span>Материалы</span>
+                            <ul>
+                                <li><a href="#">Руководство <br>пользователя</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <span>Компания</span>
+                            <ul>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="dealers.html">Партнёры</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <span>Другое</span>
+                            <ul>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts mt150">
+                    <div class="footer__contacts-phone">
+                        <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+                    </div>
+                    <div class="footer__contacts-email">
+                        <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+                    </div>
+                    <div class="footer__contacts-social">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="assets/images/yt.svg" alt=""></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/tg.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__mobile mt150">
+            <div class="footer__mobile-social">
+                <ul>
+                    <li><a href="#" target="_blank"><img src="assets/images/yt.svg" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="assets/images/tg.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer__mobile-phone">
+                <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+            </div>
+            <div class="footer__mobile-email">
+                <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+            </div>
+            <div class="footer__mobile-copyright">
+                ©2024, ООО «ГеомирАгро»
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- <div class="overlay">
+    <div class="modal-block" id="bid">
+        <a href="#" class="closemodal">
+            <img src="/assets/images/cancel.svg" alt="" />
+        </a>
+        <div class="block-title">
+            <h2>Получить бесплатный доступ</h2>
+            <p>Настроим тестовый доступ для вашей компании <br />с учётом потребностей бизнеса</p>
+        </div>
+        <div class="form">
+            <div class="res">
+                <div class="res-error">
+                    <div class="icon">
+                        <img src="/assets/images/form-error.svg" alt="" />
+                    </div>
+                    <div class="title">Форма не отправлена</div>
+                    <div class="text">Повторите отправку позже <br />или свяжитесь с нами по номеру <br />телефона +7 (495) 788-59-56</div>
+                </div>
+                <div class="res-success">
+                    <div class="icon">
+                        <img src="/assets/images/form-success.svg" alt="" />
+                    </div>
+                    <div class="title">Форма успешно отправлена</div>
+                    <div class="text">Менеджер нашей компании <br />скоро свяжется с вами</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <input name="f_name" type="text" placeholder="ФИО *" autocomplete="off" />
+                <div class="error-label">ФИО обязательно</div>
+            </div>
+            <div class="form-item">
+                <input name="f_email" class="email-input" type="text" placeholder="Ваша электронная почта *" autocomplete="off" />
+                <div class="error-label">Email обязательно</div>
+            </div>
+            <div class="form-item button">
+                <button type="submit" class="btn">Отправить заявку <img src="/assets/images/arrow-button.svg" alt="" /></button>
+            </div>
+            <div class="form-item yes">Нажимая на кнопку вы соглашаетесь с политикой <a href="#">обработки персональных данных</a></div>
+        </div>
+    </div>
+    <div class="modal-block" id="video">
+        <a href="#" class="closemodal">
+            <img src="/assets/images/cancel-white.svg" alt="" />
+        </a>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div> -->
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/flexmenu.min.js"></script>
+<script src="assets/js/lightcase.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="assets/js/splide-extension-auto-scroll.min.js"></script>
+<script src="assets/js/splide.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

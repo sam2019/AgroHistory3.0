@@ -807,7 +807,7 @@ body {
 }
 
 body {
-  background: #F3F3F3;
+  background: #FFFFFF;
   color: #1C1C1F;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -815,6 +815,10 @@ body {
   font-size: 16px;
   line-height: 24px;
   overflow-x: hidden;
+}
+
+body.index {
+  background: #F3F3F3;
 }
 
 body.no-scroll {
@@ -2462,6 +2466,7 @@ table th {
 
 .footer .footer__wrapper {
   padding-bottom: 40px;
+  border-top: 2px solid #F3F3F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
