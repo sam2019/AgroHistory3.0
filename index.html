@@ -33,6 +33,51 @@
         </form>
     </div>
 </div>
+<div class="mobilemenu">
+    <div class="container">
+        <div class="mobilemenu__search">
+            <form action="/search/" method="get">
+                <input type="text" name="s" placeholder="Поиск по сайту..." />
+                <button type="submit"><img src="assets/images/search.svg" alt="Поиск"></button>
+            </form>
+        </div>
+        <ul class="mobilemenu__nav">
+            <li class="mobilemenu__nav-item"><a href="#">Решения</a></li>
+            <li class="mobilemenu__nav-item parent">
+                <a href="#">
+                    Материалы
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </a>
+                <ul class="mobilemenu__nav-child submenu">
+                    <li class="mobilemenu__nav-childitem active"><a href="#">Руководство пользователя</a></li>
+                    <li class="mobilemenu__nav-childitem"><a href="#">Вопросы</a></li>
+                </ul>                               
+            </li>
+            <li class="mobilemenu__nav-item"><a href="#">Новости</a></li>
+            <li class="mobilemenu__nav-item"><a href="#">Партнёры</a></li>
+            <li class="mobilemenu__nav-item"><a href="#">Контакты</a></li>
+            <li class="mobilemenu__nav-item parent">
+                <a href="#">
+                    Компания
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="submenu">
+                    <li class="active"><a href="#">Руководство пользователя</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                </ul> 
+            </li>
+            <li class="mobilemenu__nav-item"><a href="#">Поддержка</a></li>
+            <li class="mobilemenu__nav-item"><a href="#">Скачать приложение</a></li>
+        </ul>
+        <div class="mobilemenu__buttons">
+            <a href="#" taget="_blank" class="btn small">Войти</a>
+        </div>
+    </div>
+</div>
 <header class="header">
     <div class="top fz12">
         <div class="container">
