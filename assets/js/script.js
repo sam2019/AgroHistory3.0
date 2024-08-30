@@ -1,30 +1,16 @@
 $(document).ready(function() {
 
-    const splide1 = new Splide( '#companies__slider_1', {
-        type: 'loop',
-        drag: 'free',
-        focus: 'center',
-        autoWidth: true,
-        arrows: false,
-        pagination: false,
-        autoScroll: {
-            speed: 1,
-        },
-    });
-    splide1.mount(window.splide.Extensions);
-    const splide2 = new Splide( '#companies__slider_2', {
-        type: 'loop',
-        drag: 'free',
-        focus: 'center',
-        autoWidth: true,
-        arrows: false,
-        pagination: false,
-        autoScroll: {
-            speed: -1,
-        },
-    });
-    splide2.mount(window.splide.Extensions);
+    $('.openmenu').on('click', function() {
+        var that = $(this);
 
+        if(!that.hasClass('open')) {
+            that.addClass('open');
+        }
+        else {
+            that.removeClass('open');
+        }
+        return false;
+    });
     
 
     $('.opensearch').on('click', function() {
@@ -45,8 +31,6 @@ $(document).ready(function() {
             search.removeClass('open');
 		}
     });
-
-
 
     $('.parent > a').on('click', function() {
         let parent = $(this).parent();
@@ -155,6 +139,31 @@ $(document).ready(function() {
             return false;
         });
     }
+
+    const splide1 = new Splide( '#companies__slider_1', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: 1,
+        },
+    });
+    splide1.mount(window.splide.Extensions);
+    const splide2 = new Splide( '#companies__slider_2', {
+        type: 'loop',
+        drag: 'free',
+        focus: 'center',
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: -1,
+        },
+    });
+    splide2.mount(window.splide.Extensions);
 });
 
 let platform = null,
