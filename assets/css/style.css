@@ -932,7 +932,39 @@ button {
   font-weight: 500;
 }
 
-button {
+textarea,
+input {
+  border: 2px solid #FFFFFF;
+}
+
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  color: #1C1C1F;
+}
+
+textarea::-moz-placeholder, input::-moz-placeholder {
+  color: #1C1C1F;
+}
+
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {
+  color: #1C1C1F;
+}
+
+textarea::-ms-input-placeholder, input::-ms-input-placeholder {
+  color: #1C1C1F;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #1C1C1F;
+}
+
+textarea:focus,
+input:focus {
+  border: 2px solid #47B881;
+}
+
+button,
+input[type=submit] {
   cursor: pointer;
 }
 
@@ -948,15 +980,15 @@ small {
 
 a {
   color: #1C1C1F;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 a:hover {
   text-decoration: none;
   opacity: 0.8;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 * {
@@ -1018,9 +1050,19 @@ table th {
   font-weight: 500;
 }
 
+.btn:hover {
+  background-color: #238468;
+  opacity: 1;
+}
+
 .btn.white {
   background-color: #FFFFFF;
   color: #1C1C1F;
+}
+
+.btn.white:hover {
+  background-color: #EAEAEA;
+  opacity: 1;
 }
 
 .btn.small {
@@ -1251,12 +1293,11 @@ table th {
 .form-wrapper .form-item textarea {
   width: 100%;
   max-width: 360px;
-  height: 58px;
+  height: 56px;
   line-height: 24px;
   border-radius: 15px;
   background-color: #FFFFFF;
   padding: 0 24px;
-  border: 1px solid #FFFFFF;
   -moz-appearance: textfield;
 }
 
@@ -1302,7 +1343,7 @@ table th {
 .form-wrapper .form-item textarea {
   resize: none;
   padding: 18px 24px;
-  height: 132px;
+  height: 130px;
 }
 
 .form-wrapper .form-item.error .error-label {
@@ -1374,29 +1415,8 @@ table th {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  border: none;
   background-color: #FFFFFF;
   border-radius: 30px;
-}
-
-.search-form input::-webkit-input-placeholder {
-  color: #1C1C1F;
-}
-
-.search-form input::-moz-placeholder {
-  color: #1C1C1F;
-}
-
-.search-form input:-ms-input-placeholder {
-  color: #1C1C1F;
-}
-
-.search-form input::-ms-input-placeholder {
-  color: #1C1C1F;
-}
-
-.search-form input::placeholder {
-  color: #1C1C1F;
 }
 
 .search-form .closesearch {
