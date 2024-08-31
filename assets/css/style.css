@@ -2498,6 +2498,10 @@ table th {
   color: #FFFFFF;
 }
 
+.footer.footer-border {
+  border-top: 2px solid #F3F3F3;
+}
+
 .footer .footer__wrapper {
   padding-bottom: 40px;
   display: -webkit-box;
@@ -2782,11 +2786,10 @@ table th {
       -ms-flex-pack: center;
           justify-content: center;
   height: 500px;
-  padding-top: 130px;
   text-align: center;
 }
 
-.error404 .title {
+.error404 .error404_title {
   margin-bottom: 64px;
   font-size: 208px;
   line-height: 148px;
@@ -2803,7 +2806,7 @@ table th {
 }
 
 .error404 p a {
-  color: #47B881;
+  color: #339E75;
   text-decoration: none;
 }
 
@@ -3102,6 +3105,10 @@ table th {
     display: -ms-flexbox;
     display: flex;
   }
+
+  .error404 {
+    height: 540px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -3223,6 +3230,19 @@ table th {
 
   .footer .footer__wrapper .footer__wrapper-navigation .footer__navigation .footer__navigation-list .footer__navigation-item ul li {
     padding-right: 0;
+  }
+
+  .error404 {
+    height: 626px;
+  }
+
+  .error404 .error404_title {
+    font-size: 100px;
+    line-height: 72px;
+  }
+
+  .error404 p br {
+    display: block;
   }
 }
 
