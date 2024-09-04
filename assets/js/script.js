@@ -149,30 +149,32 @@ $(document).ready(function() {
         });
     }
 
-    const splide1 = new Splide( '#companies__slider_1', {
-        type: 'loop',
-        drag: 'free',
-        focus: 'center',
-        autoWidth: true,
-        arrows: false,
-        pagination: false,
-        autoScroll: {
-            speed: 0.6,
-        },
-    });
-    splide1.mount(window.splide.Extensions);
-    const splide2 = new Splide( '#companies__slider_2', {
-        type: 'loop',
-        drag: 'free',
-        focus: 'center',
-        autoWidth: true,
-        arrows: false,
-        pagination: false,
-        autoScroll: {
-            speed: -0.6,
-        },
-    });
-    splide2.mount(window.splide.Extensions);
+    if($('#companies__slider_1').length) {
+        const splide1 = new Splide('#companies__slider_1', {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            autoWidth: true,
+            arrows: false,
+            pagination: false,
+            autoScroll: {
+                speed: 0.6,
+            },
+        });
+        splide1.mount(window.splide.Extensions);
+        const splide2 = new Splide('#companies__slider_2', {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            autoWidth: true,
+            arrows: false,
+            pagination: false,
+            autoScroll: {
+                speed: -0.6,
+            },
+        });
+        splide2.mount(window.splide.Extensions);
+    }
 });
 
 let platform = null,
