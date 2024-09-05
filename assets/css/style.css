@@ -2448,13 +2448,29 @@ table th {
 }
 
 .for .for__wrapper .for__wrapper-list .for__wrapper-item .for__wrapper-bg .for__wrapper-desc {
+  max-height: 0;
+  -webkit-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+.for .for__wrapper .for__wrapper-list .for__wrapper-item .for__wrapper-bg .for__wrapper-desc div {
   margin-top: 16px;
   color: #FFFFFF;
-  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .for .for__wrapper .for__wrapper-list .for__wrapper-item:hover .for__wrapper-bg .for__wrapper-desc {
-  display: block;
+  max-height: 100px;
+  -webkit-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+.for .for__wrapper .for__wrapper-list .for__wrapper-item:hover .for__wrapper-bg .for__wrapper-desc div {
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .news__wrapper-list {
