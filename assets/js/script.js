@@ -97,10 +97,12 @@ $(document).ready(function() {
             spaceBetween: 20,
             slidesPerView: 'auto',
             normalizeSlideIndex: false,
-            mousewheel: {
-                enabled: true,
-                releaseOnEdges: true,
-            },
+            simulateTouch: true,
+            slideToClickedSlide: true,
+            // mousewheel: {
+            //     enabled: true,
+            //     releaseOnEdges: true,
+            // },
             on: {
                 slideChangeTransitionEnd: function() {
                     let slider = $('.platform__slider .swiper-slide-active').data('slider'),

@@ -154,7 +154,7 @@
 						_self.objects.pause = $('<a href="#" class="' + _self.settings.classPrefix + 'icon-pause"><span>' + _self.settings.labels['navigator.pause'] + '</span></a>').hide()
 					);
 					_self.objects.case.append(
-						_self.objects.close = $('<a href="#" class="' + _self.settings.classPrefix + 'icon-close"><img src="/local/templates/.default/assets/images/cancel-white.svg" alt="" /><span>' + _self.settings.labels['close'] + '</span></a>'),
+						_self.objects.close = $('<a href="#" class="' + _self.settings.classPrefix + 'icon-close"><img src="/local/templates/.defaultassets/images/cancel-white.svg" alt="" /><span>' + _self.settings.labels['close'] + '</span></a>'),
 						_self.objects.content = $('<div id="' + _self.settings.idPrefix + 'content"></div>'),
 						_self.objects.info = $('<div id="' + _self.settings.idPrefix + 'info"></div>')
 					);
