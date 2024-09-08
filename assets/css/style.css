@@ -1528,9 +1528,14 @@ table th {
       -ms-flex-align: center;
           align-items: center;
   gap: 4px;
+  white-space: nowrap;
+  overflow-x: hidden;
 }
 
 .breadcrumbs ul li.breadcrumbs__item-arrow {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   width: 16px;
   height: 16px;
   background: url(../images/arrow-breadcrumbs.svg) no-repeat;
@@ -2526,6 +2531,10 @@ table th {
   color: #339E75;
 }
 
+.swiper-container-horizontal .news__wrapper-list {
+  gap: 0;
+}
+
 .form {
   padding: 180px 0;
 }
@@ -3255,6 +3264,13 @@ table th {
       flex-wrap: wrap;
 }
 
+.download-wrapper .download-platform {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: calc((100% - 32px) / 2);
+}
+
 .download-wrapper .download-list {
   margin: 32px 0;
   padding: 0;
@@ -3271,7 +3287,7 @@ table th {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 296px;
+  width: calc((100% - 32px) / 2);
 }
 
 .download-wrapper .download-list > li a {
@@ -3332,6 +3348,10 @@ table th {
 
 .dealers-filter-scroll {
   overflow-x: auto;
+  position: relative;
+  left: -20px;
+  width: calc(100% + 40px);
+  padding: 0 20px;
 }
 
 .dealers-filter-scroll .dealers-filter {
@@ -3343,6 +3363,10 @@ table th {
   list-style: none;
   gap: 16px;
   white-space: nowrap;
+}
+
+.dealers-filter-scroll .dealers-filter li:last-child {
+  padding-right: 20px;
 }
 
 .dealers-filter-scroll .dealers-filter a {
@@ -3586,6 +3610,14 @@ table th {
   .why .why__wrapper .why__wrapper-list .why__wrapper-item .image {
     width: 270px;
   }
+
+  .form.window {
+    padding: 110px;
+  }
+
+  .download-wrapper .download-platform {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -3630,6 +3662,7 @@ table th {
     margin-top: 90px;
   }
 
+  .mt136,
   .mt150 {
     margin-top: 80px;
   }
@@ -3857,6 +3890,18 @@ table th {
   .error404 {
     height: 540px;
   }
+
+  .page.flex .sidebar.news-sidebar {
+    width: 300px;
+  }
+
+  .form.window {
+    padding: 50px;
+  }
+
+  .dealers-list > li {
+    width: calc((100% - 32px) / 2);
+  }
 }
 
 @media (max-width: 999px) {
@@ -3890,6 +3935,76 @@ table th {
   }
 }
 
+@media (max-width: 900px) {
+  .news .page .news__wrapper-list .news__wrapper-item {
+    width: 100%;
+  }
+
+  .form.window .two-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+
+  .form.window .two-blocks .right {
+    width: 100%;
+  }
+
+  .form.window .two-blocks .right .form-wrapper {
+    max-width: 100%;
+  }
+
+  .form.window .two-blocks .right .form-wrapper .form-item input {
+    max-width: 100%;
+  }
+
+  .page.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .page.flex > .text,
+  .page.flex .sidebar {
+    width: 100%;
+  }
+
+  .page > .text .map {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .news .page .news__wrapper-list .news__wrapper-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .page.flex .sidebar.news-sidebar {
+    width: 100%;
+    display: none;
+  }
+
+  .page.flex .sidebar.news-sidebar.open {
+    display: block;
+  }
+
+  .title-with-button a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .page.flex.page-news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 @media (max-width: 670px) {
   .integration .integration__tabs .integration__tabs-tab .integration__tabs-wrapper .integration__tabs-image {
     width: 100%;
@@ -3897,6 +4012,7 @@ table th {
 }
 
 @media (max-width: 599px) {
+  .mt136,
   .mt150 {
     margin-top: 40px;
   }
@@ -3907,6 +4023,10 @@ table th {
 
   .header .top .container {
     gap: 4px;
+  }
+
+  .header .navigation {
+    padding: 14px 0;
   }
 
   .start .start__wrapper .start__training .start__training-wrapper .start__training-image img {
@@ -3991,6 +4111,22 @@ table th {
 
   .error404 p br {
     display: block;
+  }
+
+  .news .page .news__wrapper-list .news__wrapper-item {
+    width: 100%;
+  }
+
+  .pagination ul li a .word {
+    display: none;
+  }
+
+  .download-wrapper .download-list > li {
+    width: 100%;
+  }
+
+  .dealers-list > li {
+    width: 100%;
   }
 }
 
