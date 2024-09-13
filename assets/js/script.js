@@ -2,11 +2,15 @@ $(document).ready(function() {
 
     $('.openmenu').on('click', function() {
         var that = $(this),
-            menu = $('.mobilemenu');
+            menu = $('.mobilemenu'),
+            fixedmenu = document.querySelector('.fixedmenu'),
+            fm_top = fixedmenu.getBoundingClientRect().top,
+            fm_height = fixedmenu.offsetHeight,
+            top = fm_top + fm_height;
 
         if(!that.hasClass('open')) {
             that.addClass('open');
-            menu.addClass('open');
+            menu.css({'top': top + 'px'}).addClass('open');
             $('body').addClass('no-scroll');
         }
         else {
@@ -38,6 +42,7 @@ $(document).ready(function() {
     });
 
     $('.parent > a').on('click', function() {
+
         let parent = $(this).parent();
         if(!parent.hasClass('open')) {
             parent.addClass('open').siblings().removeClass('open');
@@ -48,6 +53,7 @@ $(document).ready(function() {
         return false;
     });
     $(document).mouseup(function(e) {
+
         let child = $('.parent ul'),
             parent = child.parent();
 
@@ -61,9 +67,25 @@ $(document).ready(function() {
         return false;
     });
 
+    $('.go-to').click(function() {
+
+        $('.mobilemenu').removeClass('active');
+        $('.navigation ul').removeClass('open');
+        $('body').removeClass('no-scroll');
+
+        var block = $(this).attr('href'),
+            offset = $(block).offset().top;
+        $('html, body').animate({
+           scrollTop: offset + 'px'
+        }, {
+           duration: 500,
+           easing: 'swing'
+        });
+        return false;
+    });
 
     $('.opensidebar').on('click', function() {
-        var that = $(this),
+        let that = $(this),
             sidebar = $('.sidebar');
         if(that.hasClass('open')) {
             that.removeClass('open');
@@ -75,6 +97,30 @@ $(document).ready(function() {
         }
     });
 
+    $('.openmodal').on('click', function() {
+        let that = $(this),
+            modal = that.data('modal');
+        $('.overlay').addClass('show');
+        $('body').addClass('no-scroll');
+        $('#' + modal).addClass('show');
+        if(modal == 'video') {
+            let video = that.data('video');
+            $('#' + modal).find('iframe').attr('src', video);
+        }
+        return false;
+    });
+    $('.closemodal').on('click', function() {
+        $('#video iframe').attr('src', '');
+        $('.overlay, .modal-block').removeClass('show');
+        $('body').removeClass('no-scroll');
+        return false;
+    });
+    $(document).mouseup(function (e) {
+		if(!$('.modal-block').is(e.target) && $('.modal-block').has(e.target).length === 0) {
+            $('.overlay, .modal').removeClass('show');
+            $('body').removeClass('no-scroll');
+		}
+    });
 
     blocksResize();
     $(window).on('resize', function() {
