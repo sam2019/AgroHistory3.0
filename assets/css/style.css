@@ -1930,6 +1930,8 @@ table th {
   width: 410px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+  height: 688px;
 }
 
 .platform .platform__wrapper .platform__wrapper-buttons ul {
@@ -1939,11 +1941,8 @@ table th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .platform .platform__wrapper .platform__wrapper-buttons ul li {
@@ -1991,6 +1990,7 @@ table th {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 8px;
+  height: 100%;
 }
 
 .platform .platform__wrapper .platform__wrapper-content {
@@ -3703,6 +3703,7 @@ table th {
     position: relative;
     left: -20px;
     padding: 0 20px;
+    height: auto;
   }
 
   .platform .platform__wrapper .platform__wrapper-buttons ul {
@@ -3710,6 +3711,8 @@ table th {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     gap: 0;
   }
 
@@ -3725,6 +3728,12 @@ table th {
 
   .platform .platform__wrapper .platform__wrapper-buttons ul li.active {
     opacity: 1;
+  }
+
+  .platform .platform__wrapper .platform__wrapper-buttons ul li a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .platform .platform__wrapper .platform__wrapper-buttons ul li a .desc {
