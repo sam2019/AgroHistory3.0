@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>История поля</title>
     <meta name="description" content="Облачный сервис «История поля». Контроль и управление агробизнесом из любой точки Земли" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="История поля" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
@@ -46,16 +43,22 @@
                     </svg> 
                 </a>
                 <ul class="mobilemenu__nav-child submenu">
-                    <li class="mobilemenu__nav-childitem active"><a href="#">Руководство пользователя</a></li>
+                    <li class="mobilemenu__nav-childitem"><a href="#">Руководство пользователя</a></li>
                 </ul>                               
             </li>
             <li class="mobilemenu__nav-item"><a href="news.html">Новости</a></li>
             <li class="mobilemenu__nav-item"><a href="dealers.html">Партнёры</a></li>
             <li class="mobilemenu__nav-item"><a href="contacts.html">Контакты</a></li>
-            <li class="mobilemenu__nav-item">
-                <a href="#">
+            <li class="mobilemenu__nav-item parent">
+                <a href="about.html">
                     Компания
-                </a> 
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="mobilemenu__nav-child submenu">
+                    <li class="mobilemenu__nav-childitem"><a href="#">Руководство пользователя</a></li>
+                </ul>   
             </li>
             <li class="mobilemenu__nav-item"><a href="#">Поддержка</a></li>
             <li class="mobilemenu__nav-item"><a href="download.html">Скачать приложение</a></li>
@@ -80,10 +83,16 @@
                 <ul class="top__menu-nav">
                     <li class="top__menu-item top__menu-search opensearch"><a href="#"><img src="assets/images/search.svg" alt="Поиск"></a></li>
                     <li class="top__menu-item"><a href="contacts.html">Контакты</a></li>
-                    <li class="top__menu-item">
+                    <li class="top__menu-item parent">
                         <a href="about.html">
                             Компания
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
+                        <ul class="top__menu-child submenu">
+                            <li class="top__menu-childitem"><a href="#">Руководство пользователя</a></li>
+                        </ul>   
                     </li>
                     <li class="top__menu-item"><a href="#">Поддержка</a></li>
                     <li class="top__menu-item"><a href="download.html">Скачать приложение</a></li>
@@ -121,7 +130,7 @@
                                 </svg> 
                             </a>
                             <ul class="navigation__nav-child submenu">
-                                <li class="navigation__nav-childitem active"><a href="#">Руководство пользователя</a></li>
+                                <li class="navigation__nav-childitem"><a href="#">Руководство пользователя</a></li>
                             </ul>                               
                         </li>
                         <li class="navigation__nav-item"><a href="news.html">Новости</a></li>
@@ -219,7 +228,7 @@
     <div class="container">
         <h2 class="section_h2">Хотите узнать больше?</h2>
         <div class="section_description">Пришлем презентацию, проведем демонстрацию решения<br> и ответим на все вопросы</div>
-        <div class="form-wrapper mt90">
+        <div class="form-wrapper mt58">
             <div class="res">
                 <div class="res-error">
                     <div class="icon">
@@ -264,7 +273,7 @@
 </section>
 
 </main>
-<footer class="footer mt150 ">
+<footer class="footer pt150 ">
     <div class="container ">
         <div class="footer__wrapper">
             <div class="footer__wrapper-info">

@@ -95,6 +95,7 @@ $(document).ready(function() {
             that.addClass('open');
             sidebar.addClass('open');
         }
+        return false;
     });
 
     $('.openmodal').on('click', function() {
@@ -227,32 +228,30 @@ $(document).ready(function() {
         });
     }
 
-    if($('#companies__slider_1').length) {
-        const splide1 = new Splide('#companies__slider_1', {
-            type: 'loop',
-            drag: 'free',
-            focus: 'center',
-            autoWidth: true,
-            arrows: false,
-            pagination: false,
-            autoScroll: {
-                speed: 0.6,
-            },
+    if($('.splide').length) {
+        var splide = [];
+        $('.splide').each(function(i, el) {
+            if(i % 2 == 0) {
+                var speed = 0.6;
+            }
+            else {
+                var speed = -0.6;
+            }
+            splide[i] = new Splide(el, {
+                type: 'loop',
+                drag: 'free',
+                focus: 'center',
+                autoWidth: true,
+                arrows: false,
+                pagination: false,
+                autoScroll: {
+                    speed: speed,
+                },
+            });
+            splide[i].mount(window.splide.Extensions);
         });
-        splide1.mount(window.splide.Extensions);
-        const splide2 = new Splide('#companies__slider_2', {
-            type: 'loop',
-            drag: 'free',
-            focus: 'center',
-            autoWidth: true,
-            arrows: false,
-            pagination: false,
-            autoScroll: {
-                speed: -0.6,
-            },
-        });
-        splide2.mount(window.splide.Extensions);
     }
+    
 });
 
 let platform = null,
