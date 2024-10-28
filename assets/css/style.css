@@ -713,7 +713,7 @@ body {
 
 body {
   background: #FFFFFF;
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -843,24 +843,24 @@ input {
 }
 
 textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 textarea::-moz-placeholder, input::-moz-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 textarea:-ms-input-placeholder, input:-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 textarea::-ms-input-placeholder, input::-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 textarea::placeholder,
 input::placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 button,
@@ -879,7 +879,7 @@ small {
 }
 
 a {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -964,7 +964,7 @@ table th {
 
 .btn.white {
   background-color: #FFFFFF;
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 .btn.white:hover {
@@ -980,7 +980,7 @@ table th {
 
 .btn.grey {
   background-color: #F3F3F3;
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 .btn.grey:hover {
@@ -1006,7 +1006,7 @@ table th {
 .btn.openmenu span {
   display: block;
   position: relative;
-  background: hwb(240 11% 88%);
+  background: rgb(28, 28, 31);
   width: 18px;
   height: 2px;
   border-radius: 1px;
@@ -1020,7 +1020,7 @@ table th {
   display: block;
   position: absolute;
   left: 0;
-  background: hwb(240 11% 88%);
+  background: rgb(28, 28, 31);
   width: 18px;
   height: 2px;
   border-radius: 1px;
@@ -1249,39 +1249,41 @@ table th {
 }
 
 .form-wrapper .form-item input:hover,
-.form-wrapper .form-item textarea:hover {
+.form-wrapper .form-item input:focus,
+.form-wrapper .form-item textarea:hover,
+.form-wrapper .form-item textarea:focus {
   border: 2px solid #166A5B;
 }
 
 .form-wrapper .form-item input::-webkit-input-placeholder, .form-wrapper .form-item textarea::-webkit-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .form-wrapper .form-item input::-moz-placeholder, .form-wrapper .form-item textarea::-moz-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .form-wrapper .form-item input:-ms-input-placeholder, .form-wrapper .form-item textarea:-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .form-wrapper .form-item input::-ms-input-placeholder, .form-wrapper .form-item textarea::-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .form-wrapper .form-item input::placeholder,
 .form-wrapper .form-item textarea::placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .form-wrapper .form-item input::-ms-input-placeholder,
 .form-wrapper .form-item textarea::-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 .form-wrapper .form-item input::-webkit-outer-spin-button,
@@ -1307,7 +1309,7 @@ table th {
 }
 
 .form-wrapper .form-item.button {
-  margin: 58px 0;
+  margin: 36px 0 48px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1398,9 +1400,6 @@ table th {
 
 .parent {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1443,6 +1442,13 @@ table th {
   white-space: nowrap;
   display: none;
   overflow: hidden;
+}
+
+.submenu.mobilemenu__nav-child {
+  position: static;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 
 .submenu li {
@@ -1497,6 +1503,10 @@ table th {
   opacity: 0.8;
   -webkit-filter: blur(7px);
           filter: blur(7px);
+}
+
+.submenu li:hover a {
+  color: rgba(28, 28, 31, 0.7);
 }
 
 .submenu li a {
@@ -1569,7 +1579,7 @@ table th {
 }
 
 .pagination ul li:hover a {
-  background-color: #EAEAEA;
+  color: rgba(28, 28, 31, 0.7);
 }
 
 .pagination ul li.active a {
@@ -1640,32 +1650,32 @@ table th {
 }
 
 .mobilemenu .mobilemenu__search input::-webkit-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .mobilemenu .mobilemenu__search input::-moz-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .mobilemenu .mobilemenu__search input:-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .mobilemenu .mobilemenu__search input::-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .mobilemenu .mobilemenu__search input::placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
   opacity: 1;
 }
 
 .mobilemenu .mobilemenu__search input::-ms-input-placeholder {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 .mobilemenu .mobilemenu__search button {
@@ -1713,8 +1723,17 @@ table th {
   margin-left: 3px;
 }
 
-.mobilemenu .mobilemenu__nav .mobilemenu__nav-item.open > a {
+.mobilemenu .mobilemenu__nav .mobilemenu__nav-item.open > a,
+.mobilemenu .mobilemenu__nav .mobilemenu__nav-item.active > a {
   color: #339E75;
+}
+
+.mobilemenu .mobilemenu__nav .mobilemenu__nav-item.active path {
+  fill: #339E75;
+}
+
+.mobilemenu .mobilemenu__nav .mobilemenu__nav-item.active .submenu {
+  display: block;
 }
 
 .mobilemenu .mobilemenu__nav .mobilemenu__nav-item .submenu {
@@ -1822,6 +1841,10 @@ table th {
           align-items: center;
 }
 
+.header .top .top__menu .top__menu-nav > li.active > a {
+  color: #339E75;
+}
+
 .header .fixedmenu {
   position: static;
 }
@@ -1852,6 +1875,10 @@ table th {
   gap: 16px;
 }
 
+.header .navigation .navigation__nav .navigation__nav-item.active > a {
+  color: #339E75;
+}
+
 .header .navigation .navigation__nav .navigation__nav-item.parent svg {
   margin-left: 3px;
 }
@@ -1870,6 +1897,10 @@ table th {
 
 .header .navigation .navigation__nav .navigation__nav-item.parent .navigation__nav-child a {
   padding: 10px 24px;
+}
+
+.header .navigation .navigation__nav .navigation__nav-item.parent .navigation__nav-child a:hover {
+  color: rgba(28, 28, 31, 0.7);
 }
 
 .header .navigation .navigation__nav a {
@@ -2022,7 +2053,7 @@ table th {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  height: 712px;
+  height: 702px;
 }
 
 .platform .platform__wrapper .platform__wrapper-buttons ul {
@@ -2038,7 +2069,7 @@ table th {
 
 .platform .platform__wrapper .platform__wrapper-buttons ul li {
   overflow: hidden;
-  padding: 12px 20px;
+  padding: 12px 18px 12px 20px;
 }
 
 .platform .platform__wrapper .platform__wrapper-buttons ul li.active {
@@ -2120,7 +2151,7 @@ table th {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 630px;
-  padding: 47px 48px;
+  padding: 36px 48px 24px;
   border-radius: 12px;
   background: #FFFFFF url(../images/grid.svg) repeat-x top center;
   text-align: center;
@@ -2174,7 +2205,7 @@ table th {
 }
 
 .start .start__wrapper .start__training {
-  background-color: hwb(240 11% 88%);
+  background-color: rgb(28, 28, 31);
   border-radius: 12px;
   padding: 32px 0 0 32px;
   display: -webkit-box;
@@ -2276,6 +2307,16 @@ table th {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: calc(33.333% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .start .start__wrapper .start__support .start__support-time {
@@ -2290,6 +2331,7 @@ table th {
           align-items: center;
   gap: 20px;
   color: #339E75;
+  font-weight: 600;
 }
 
 .integration .integration__links .integration__links-list {
@@ -2462,7 +2504,7 @@ table th {
 
 .why .why__wrapper .why__wrapper-list .why__wrapper-item .text {
   height: 100%;
-  max-width: 320px;
+  max-width: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2500,6 +2542,7 @@ table th {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: calc((100% - 40px) / 3);
+  height: 560px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -2507,6 +2550,10 @@ table th {
 
 .for .for__wrapper .for__wrapper-list .for__wrapper-item img {
   vertical-align: top;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .for .for__wrapper .for__wrapper-list .for__wrapper-item .for__wrapper-bg {
@@ -2932,7 +2979,7 @@ table th {
 
 .overlay .modal-block .block-title h2,
 .overlay .modal-block .block-title p {
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 .overlay .modal-block .form {
@@ -2975,7 +3022,7 @@ table th {
   position: absolute;
   top: 0px;
   right: -32px;
-  background-color: hwb(240 11% 88%);
+  background-color: rgb(28, 28, 31);
   border-radius: 12px;
 }
 
@@ -3166,6 +3213,10 @@ table th {
   padding: 12px;
 }
 
+.page.flex .sidebar .block.block-social ul li a:hover {
+  opacity: 1;
+}
+
 .page.flex .sidebar .block.block-social ul li img {
   width: 24px;
   vertical-align: top;
@@ -3187,6 +3238,15 @@ table th {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
+}
+
+.page.flex .sidebar .block.block-link:hover {
+  opacity: 1;
+  color: rgba(28, 28, 31, 0.7);
+}
+
+.page.flex .sidebar .block.block-link:hover img {
+  opacity: 0.7;
 }
 
 /* Sidebar */
@@ -3236,8 +3296,8 @@ table th {
   padding: 20px 24px;
   display: block;
   text-decoration: none;
-  /*font-size: 20px;
-  line-height: 28px;*/
+  font-size: 20px;
+  line-height: 28px;
 }
 
 /* Tags */
@@ -3605,7 +3665,7 @@ table th {
 
 .dealers-list > li .dealers-contacts li a {
   text-decoration: none;
-  color: hwb(240 11% 88%);
+  color: rgb(28, 28, 31);
 }
 
 .dealers-list > li .dealers-contacts li a[target=_blank] {
@@ -3616,9 +3676,22 @@ table th {
   text-align: center;
 }
 
+.dealer-form .form-wrapper .form-item.personal {
+  color: rgb(28, 28, 31);
+}
+
+.dealer-form .form-wrapper .form-item.personal a {
+  color: #339E75;
+}
+
 .dealer-form .form-wrapper .form-item input {
   background-color: #F3F3F3;
   border: 2px solid #F3F3F3;
+}
+
+.dealer-form .form-wrapper .form-item input:hover,
+.dealer-form .form-wrapper .form-item input:focus {
+  border: 2px solid #166A5B;
 }
 
 /* Search */
@@ -3635,6 +3708,11 @@ table th {
   background-color: #F3F3F3;
   border: 2px solid #F3F3F3;
   padding: 0 48px 0 16px;
+}
+
+.search-form-page input:hover,
+.search-form-page input:focus {
+  border: 2px solid #166A5B;
 }
 
 .search-form-page .clearsearch {
@@ -4228,14 +4306,9 @@ table th {
     width: 100%;
   }
 
-  .for .for__wrapper .for__wrapper-list .for__wrapper-item img {
-    height: 412px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   .for .for__wrapper .for__wrapper-list .for__wrapper-item {
     width: 257px;
+    height: 412px;
   }
 
   .footer .footer__wrapper .footer__wrapper-navigation .footer__navigation .footer__navigation-list {
@@ -4296,7 +4369,7 @@ table th {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   .header .logo span {
     display: none;
   }

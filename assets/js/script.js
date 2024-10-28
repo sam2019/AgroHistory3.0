@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    $('.clearsearch').on('click', function() {
+        $(this).parent().find('input[name=q]').val('');
+        return false;
+    });
+
     $('.openmenu').on('click', function() {
         var that = $(this),
             menu = $('.mobilemenu'),
@@ -105,13 +110,20 @@ $(document).ready(function() {
         $('body').addClass('no-scroll');
         $('#' + modal).addClass('show');
         if(modal == 'video') {
-            let video = that.data('video');
-            $('#' + modal).find('iframe').attr('src', video);
+            var videourl = that.attr('href');
+            var videocontainer = '#videocontainer';
+            var parameter = new Date().getMilliseconds();
+            var video = '<video width="1280" id="intro-video" autoplay loop src="' + videourl + '?t=' + parameter + '"></video>';
+            $(videocontainer).append(video);
+            videl = $(document).find('#intro-video')[0];
+            videl.load();
+
+            //$('#' + modal).find('source').attr('src', video);
         }
         return false;
     });
     $('.closemodal').on('click', function() {
-        $('#video iframe').attr('src', '');
+        $('#video source').attr('src', '');
         $('.overlay, .modal-block').removeClass('show');
         $('body').removeClass('no-scroll');
         return false;
@@ -250,6 +262,48 @@ $(document).ready(function() {
             });
             splide[i].mount(window.splide.Extensions);
         });
+    }
+
+    if($('#map').length) {
+
+        var myMap;
+        var zoom = $('#map').data('zoom');
+        var coords = $('#map').data('center').split(',');
+
+        function init() {
+
+            if (!myMap) {
+
+                myMap = new ymaps.Map('map', {
+                    center: [coords[0], coords[1]],
+                    zoom: zoom,
+                    controls: ['smallMapDefaultSet']
+                });	
+                yellowCollection = new ymaps.GeoObjectCollection(null, {
+                    preset: 'islands#yellowIcon'
+                });
+                myMap.geoObjects.add(yellowCollection);
+                
+                placemark = new ymaps.Placemark([coords[0], coords[1]]);
+
+                placemark.options.set({
+                    hideIcon: false, 
+                    iconLayout: 'default#image',
+                    iconImageHref: '/local/templates/.default/assets/images/place.svg',
+                    hideIconOnBalloonOpen: false,
+                    iconImageSize: [46, 59],
+                    balloonOffset: [0, 0],
+                    iconImageOffset: [-23, -59],
+                    balloonPane: 'outerBalloon',
+                });
+
+                yellowCollection.add(placemark);
+                
+                myMap.behaviors.disable('scrollZoom');
+                myMap.behaviors.disable('drag');
+            }
+        }
+        ymaps.ready(init);
     }
     
 });
