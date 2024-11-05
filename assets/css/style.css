@@ -749,6 +749,14 @@ h1.white {
   color: #FFFFFF;
 }
 
+h1 br {
+  display: none;
+}
+
+h1 br:nth-child(2) {
+  display: block;
+}
+
 h2 {
   font-size: 36px;
   line-height: 48px;
@@ -2407,6 +2415,7 @@ table th {
   font-size: 20px;
   line-height: 28px;
   padding: 24px 20px;
+  font-weight: 600;
 }
 
 .integration .integration__tabs {
@@ -2622,6 +2631,10 @@ table th {
   opacity: 1;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+.index-news h2.section_h2 br {
+  display: none;
 }
 
 .news__wrapper-list {
@@ -3433,7 +3446,6 @@ table th {
 
 .page > .text .download .info {
   color: #8E8E8E;
-  text-transform: uppercase;
 }
 
 .page > .text .download img {
@@ -4253,6 +4265,44 @@ table th {
     padding-top: 40px;
   }
 
+  h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  h1 br {
+    display: block;
+  }
+
+  h1 br:nth-child(2) {
+    display: none;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .slider__text p br {
+    display: none;
+  }
+
+  .section_description br {
+    display: none;
+  }
+
+  .index-news h2.section_h2 br {
+    display: block;
+  }
+
+  .integration h2.section_h2 span {
+    display: block;
+  }
+
+  .start .start__wrapper .start__support {
+    gap: 32px;
+  }
+
   .header .top .top__contacts {
     gap: 4px;
   }
@@ -4366,6 +4416,30 @@ table th {
 
   .dealers-list > li {
     width: 100%;
+  }
+
+  .page > .text .download .name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .page > .text .download .info {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .page > .text .download {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
