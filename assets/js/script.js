@@ -77,15 +77,20 @@ $(document).ready(function() {
         $('.mobilemenu').removeClass('active');
         $('.navigation ul').removeClass('open');
         $('body').removeClass('no-scroll');
-
-        var block = $(this).attr('href'),
-            offset = $(block).offset().top;
-        $('html, body').animate({
-           scrollTop: offset + 'px'
-        }, {
-           duration: 500,
-           easing: 'swing'
-        });
+        var block = $(this).attr('href');
+        
+        if($(block).length) {
+            var offset = $(block).offset().top;
+            $('html, body').animate({
+                scrollTop: offset + 'px'
+            }, {
+                duration: 500,
+                easing: 'swing'
+            });
+        }
+        else {
+            window.location.href = '/' + block;
+        }
         return false;
     });
 
