@@ -34,7 +34,28 @@
             </form>
         </div>
         <ul class="mobilemenu__nav">
-            <li class="mobilemenu__nav-item"><a href="#">Решения</a></li>
+            <li class="mobilemenu__nav-item parent">
+                <a href="#">
+                    Решения
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="mobilemenu__nav-child submenu">
+                    <li class="mobilemenu__nav-childitem">
+                        <a href="/agro.html">
+                            Умная Агрономия
+                            <span>Инновационный агрономический модуль для эффективного управления агробизнесом</span>
+                        </a>
+                    </li>
+                    <li class="mobilemenu__nav-childitem">
+                        <a href="/fms.html">
+                            Контроль производства 
+                            <span>Управление сельхозпроизводством, мониторинг, учёт и эффективное использование ресурсов</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="mobilemenu__nav-item parent">
                 <a href="#">
                     Материалы
@@ -121,7 +142,28 @@
                 </a>
                 <nav>
                     <ul class="navigation__nav">
-                        <li class="navigation__nav-item"><a href="#">Решения</a></li>
+                        <li class="navigation__nav-item parent">
+                            <a href="#">
+                                Решения
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <ul class="navigation__nav-child submenu">
+                                <li class="navigation__nav-childitem">
+                                    <a href="#">
+                                        Умная Агрономия
+                                        <span>Инновационный агрономический модуль для эффективного управления агробизнесом</span>
+                                    </a>
+                                </li>
+                                <li class="mobilemenu__nav-childitem">
+                                    <a href="/fms.html">
+                                        Контроль производства
+                                        <span>Управление сельхозпроизводством, мониторинг, учёт и эффективное использование ресурсов</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="navigation__nav-item parent">
                             <a href="#">
                                 Материалы
@@ -250,24 +292,17 @@
                 <div class="error-label">Обязательно для заполнения</div>
             </div>
             <div class="form-item">
-                <input name="f_phone" class="phone-input" type="text" placeholder="Телефон *" autocomplete="off" inputmode="text">
+                <input name="f_phone" class="phone-mask" type="text" placeholder="Телефон *" autocomplete="off" inputmode="text">
                 <div class="error-label">Обязательно для заполнения</div>
             </div>
             <div class="form-item">
-                <input name="f_company" type="text" placeholder="Компания *" autocomplete="off" inputmode="text">
+                <input name="f_email" class="email-mask" type="text" placeholder="Рабочая почта *" autocomplete="off" inputmode="text">
                 <div class="error-label">Обязательно для заполнения</div>
-            </div>
-            <div class="form-item">
-                <input name="f_email" class="email-input" type="text" placeholder="Рабочая почта *" autocomplete="off" inputmode="text">
-                <div class="error-label">Обязательно для заполнения</div>
-            </div>
-            <div class="form-item">
-                <input name="f_area" type="number" placeholder="Площадь полей (га)" autocomplete="off" inputmode="numeric">
             </div>
             <div class="form-item button">
                 <button type="submit" class="btn" id="test">Отправить заявку <img src="assets/images/arrow-button.svg" alt=""></button>
             </div>
-            <div class="form-item personal">Отправляя заявку вы соглашаетесь <br>на <a href="#">Обработку персональных данных</a></div>
+            <div class="form-item personal">Отправляя заявку вы соглашаетесь на <a href="#">Обработку персональных данных</a></div>
         </div>
     </div>
 </section>

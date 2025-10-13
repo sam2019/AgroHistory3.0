@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>История поля</title>
+    <meta name="description" content="Облачный сервис «История поля». Контроль и управление агробизнесом из любой точки Земли" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="История поля" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+<body class="index">
+<div class="search-form">
+    <div class="container">
+        <form action="/search/" method="get">
+            <input type="text" name="s" placeholder="Поиск по сайту..." />
+            <a href="#" class="closesearch"><img src="assets/images/cancel.svg" alt="" /></a>
+        </form>
+    </div>
+</div>
+<div class="mobilemenu">
+    <div class="container">
+        <div class="mobilemenu__search">
+            <form action="/search/" method="get">
+                <input type="text" name="s" placeholder="Поиск по сайту..." />
+                <button type="submit"><img src="assets/images/search.svg" alt="Поиск"></button>
+            </form>
+        </div>
+        <ul class="mobilemenu__nav">
+            <li class="mobilemenu__nav-item parent">
+                <a href="#">
+                    Решения
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="mobilemenu__nav-child submenu">
+                    <li class="mobilemenu__nav-childitem">
+                        <a href="/agro.html">
+                            Умная Агрономия
+                            <span>Инновационный агрономический модуль для эффективного управления агробизнесом</span>
+                        </a>
+                    </li>
+                    <li class="mobilemenu__nav-childitem">
+                        <a href="/fms.html">
+                            Контроль производства 
+                            <span>Управление сельхозпроизводством, мониторинг, учёт и эффективное использование ресурсов</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mobilemenu__nav-item parent">
+                <a href="#">
+                    Материалы
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </a>
+                <ul class="mobilemenu__nav-child submenu">
+                    <li class="mobilemenu__nav-childitem"><a href="#">Руководство пользователя</a></li>
+                </ul>                               
+            </li>
+            <li class="mobilemenu__nav-item"><a href="news.html">Новости</a></li>
+            <li class="mobilemenu__nav-item"><a href="dealers.html">Партнёры</a></li>
+            <li class="mobilemenu__nav-item"><a href="contacts.html">Контакты</a></li>
+            <li class="mobilemenu__nav-item parent">
+                <a href="about.html">
+                    Компания
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <ul class="mobilemenu__nav-child submenu">
+                    <li class="mobilemenu__nav-childitem"><a href="#">Руководство пользователя</a></li>
+                </ul>   
+            </li>
+            <li class="mobilemenu__nav-item"><a href="#">Поддержка</a></li>
+            <li class="mobilemenu__nav-item"><a href="download.html">Скачать приложение</a></li>
+        </ul>
+        <div class="mobilemenu__buttons">
+            <a href="#" taget="_blank" class="btn small">Войти</a>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <div class="top fz12">
+        <div class="container">
+            <div class="top__contacts">
+                <div class="top__contacts-phone">
+                    <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+                </div>
+                <div class="top__contacts-email">
+                    <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+                </div>
+            </div>
+            <div class="top__menu">
+                <ul class="top__menu-nav">
+                    <li class="top__menu-item top__menu-search opensearch"><a href="#"><img src="assets/images/search.svg" alt="Поиск"></a></li>
+                    <li class="top__menu-item"><a href="contacts.html">Контакты</a></li>
+                    <li class="top__menu-item parent">
+                        <a href="about.html">
+                            Компания
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="top__menu-child submenu">
+                            <li class="top__menu-childitem"><a href="#">Руководство пользователя</a></li>
+                        </ul>   
+                    </li>
+                    <li class="top__menu-item"><a href="#">Поддержка</a></li>
+                    <li class="top__menu-item"><a href="download.html">Скачать приложение</a></li>
+                    <li class="top__menu-item top__menu-lang parent">
+                        <a href="#">
+                            Ru
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="submenu">
+                            <li class="active"><a href="#">Ru</a></li>
+                            <li><a href="#">En</a></li>
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixedmenu">
+        <div class="container">
+            <div class="navigation">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.svg" alt="">
+                    <span>История поля</span>
+                </a>
+                <nav>
+                    <ul class="navigation__nav">
+                        <li class="navigation__nav-item parent">
+                            <a href="#">
+                                Решения
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <ul class="navigation__nav-child submenu">
+                                <li class="navigation__nav-childitem">
+                                    <a href="#">
+                                        Умная Агрономия
+                                        <span>Инновационный агрономический модуль для эффективного управления агробизнесом</span>
+                                    </a>
+                                </li>
+                                <li class="mobilemenu__nav-childitem">
+                                    <a href="/fms.html">
+                                        Контроль производства
+                                        <span>Управление сельхозпроизводством, мониторинг, учёт и эффективное использование ресурсов</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__nav-item parent">
+                            <a href="#">
+                                Материалы
+                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.79183 3.95831L5.50016 6.24998L3.2085 3.95831" stroke="#1C1C1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </a>
+                            <ul class="navigation__nav-child submenu">
+                                <li class="navigation__nav-childitem"><a href="#">Руководство пользователя</a></li>
+                            </ul>                               
+                        </li>
+                        <li class="navigation__nav-item"><a href="news.html">Новости</a></li>
+                        <li class="navigation__nav-item"><a href="dealers.html">Партнёры</a></li>
+                    </ul>
+                </nav>
+                <div class="navigation__buttons">
+                    <a href="#try" taget="_blank" class="btn small white go-to">Получить презентацию</a>
+                    <a href="#" taget="_blank" class="btn small">Войти</a>
+                    <a href="#" taget="_blank" class="btn small openmenu"><span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+
+<section class="slider control-slider">
+    <div class="slider__text mt58">
+        <h1 class="br">Технологии нового поколения для контроля <br>полей и роста рентабельности</h1>
+        <p>Инновационный агрономический модуль в составе единой платформы <br>«АссистАгро» для эффективного управления агробизнесом.</p>
+        <div class="slider__text-btn btn-center">
+            <a href="#try" class="btn go-to">Попробовать бесплатно <img src="assets/images/arrow-button.svg" alt="" /></a>
+        </div>
+        <img src="/assets/images/control-hero-l.png" alt="" class="hero-small l" />
+        <img src="/assets/images/control-hero.png" alt="" class="hero mt24" />
+        <img src="/assets/images/control-hero-r.png" alt="" class="hero-small r" />
+    </div>
+</section>
+<section class="maximum">
+    <div class="container">
+        <h2 class="section_h2">Получайте <span>максимум</span> от каждого гектара и ресурсов</h2>
+        <div class="section_description">Модуль единой цифровой платформы — превратите данные с полей в измеримый <br>экономический результат и управляйте рисками на 100%</div>
+        <div class="mt64">
+            <ul class="maximum_list">
+                <li class="maximum_list-item">
+                    <div class="icon"><img src="assets/images/maximum/1.svg" alt=""></div>
+                    <h5 class="title">Сократите расходы на СЗР до 30%</h5>
+                    <div class="desc">За счёт точечной обработки только проблемных участков и применения на них оптимальной нормы внесения для каждой зоны, а не сплошной обработки по техкарте.</div>
+                </li>
+                <li class="maximum_list-item">
+                    <div class="icon"><img src="assets/images/maximum/2.svg" alt=""></div>
+                    <h5 class="title">Сохраните до 40% потенциала урожайности</h5>
+                    <div class="desc">Благодаря круглосуточному ИИ-мониторингу, который выявляет угрозы для урожая на самой ранней стадии и помогает вовремя на них среагировать — раньше чем это станет убытками.</div>
+                </li>
+                <li class="maximum_list-item">
+                    <div class="icon"><img src="assets/images/maximum/3.svg" alt=""></div>
+                    <h5 class="title">Решите проблему дефицита кадров</h5>
+                    <div class="desc">Освободите ключевых специалистов от рутинного контроля, сфокусировав их на принятии решений, пока система и скаут эффективно контролируют до 15 000 га.</div>
+                </li>
+                <li class="maximum_list-item">
+                    <div class="icon"><img src="assets/images/maximum/4.svg" alt=""></div>
+                    <h5 class="title">Получите 100% контроля над полями и операциями</h5>
+                    <div class="desc">Объединив все данные по операциям, скаутингу и технике в едином окне для принятия взвешенных и объективных решений.</div>
+                </li>
+            </ul>
+        </div>
+        <div class="companies mt64">
+            <div class="companies__wrapper">
+                <h2 class="section_h2">
+                    Более <span>800 компаний</span> в <span>7 странах</span> мира<br> 
+                    развивают своё дело c нами
+                </h2>
+                <div class="companies__slider mt64 splide">
+                    <div class="splide__track">
+                        <ul class="companies__slider-list splide__list">
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название2 <span>Строка 2</span></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="companies__slider splide">
+                    <div class="splide__track">
+                        <ul class="companies__slider-list splide__list">
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название <span>Строка 2</span></div></a></li>
+                            <li class="companies__slider-item splide__slide"><a href="#"><img src="assets/images/company.svg" alt=""><div>Название2 <span>Строка 2</span></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video mt64">
+            <div class="video-wrapper">
+                <iframe width="720" height="405" src="https://rutube.ru/play/embed/77aa8acc0131d672d2e706e6a606e1bb/" frameBorder="0" allow="clipboard-write;" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="single">
+    <div class="container">
+        <h2 class="section_h2">Ваша <span>единая среда</span> управления и роста урожайности</h2>
+        <div class="section_description">Объедините все данные — от спутниковых снимков, погоды и отчётов агрономов до <br>ML-моделей, рекомендаций и треков техники. Получайте объективную картину по каждому <br>полю, действуйте на опережение и повышайте рентабельность каждого гектара.</div>
+        <div class="mt64">
+            <ul class="single_list">
+                <li class="single_list-item">
+                    <div class="text">
+                        <h4>Полная картина по всем полям 24/7</h4>
+                        <p>Интерактивная карта и гибкие отчёты собирают <span>всю информацию о полях</span> в одном месте. Больше не нужно переключаться между системами и собирать информацию по частям. Руководитель получает полный контроль над состоянием полей, а агроном — уверенность в решениях и инструмент для автоматизации оперативной работы.</p>
+                    </div>
+                    <img src="assets/images/single/1.png" class="desctop" alt="">
+                    <img src="assets/images/single/1.png" class="mobile" alt="">
+                </li>
+                <li class="single_list-item">
+                    <div class="text">
+                        <h4>Дистанционный мониторинг полей</h4>
+                        <p>Спутниковый NDVI, почасовой прогноз погоды и динамический прогноз урожайности обновляются для каждого поля, а тревоги помогают <span>вовремя заметить проблемы</span> — вы выезжаете только туда, где нужна реакция.</p>
+                    </div>
+                    <img src="assets/images/single/2.png" class="desctop" alt="">
+                    <img src="assets/images/single/2-mobile.png" class="mobile" alt="">
+                </li>
+                <li class="single_list-item">
+                    <div class="text">
+                        <h4>Планирование сезона на основе данных</h4>
+                        <p><span>Экономьте ресурсы</span> благодаря моделированию севооборота, динамическому прогнозу урожайности, поиску оптимальных дат сева и расчету лучших погодных окон для проведения обработок.</p>
+                    </div>
+                    <img src="assets/images/single/3.png" class="desctop" alt="">
+                    <img src="assets/images/single/3-mobile.png" class="mobile" alt="">
+                </li>
+                <li class="single_list-item">
+                    <div class="text">
+                        <h4>Раннее обнаружение рисков</h4>
+                        <p>Система <span>24/7</span> ведет мониторинг и проактивно информирует о рисках: от прогнозов развития болезней и вредителей до вероятности засухи, переувлажнения и заморозков. Действуйте <span>на опережение</span> и предотвращайте потери.</p>
+                    </div>
+                    <img src="assets/images/single/4.png" class="desctop" alt="">
+                    <img src="assets/images/single/4-mobile.png" class="mobile" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="btn-center mt64">
+            <a href="#try" class="btn go-to">Попробовать бесплатно <img src="assets/images/arrow-button.svg" alt="" /></a>
+        </div>
+    </div>
+</section>
+<section class="tehnology">
+    <div class="container">
+        <h2 class="section_h2">Технологии для простого и точного мониторинга полей</h2>
+        <div class="section_description">Не тратьте время на объезды «вслепую» и осмотры у края поля. Направляйте силы <br>только в проблемные зоны. Система поможет легко выстроить скаутинг с БПЛА и <br>объединит это с данными спутников, мобильных и ручных осмтров с ИИ-аналитикой.</div>
+        <div class="mt64">
+            <ul class="tehnology_list">
+                <li class="tehnology_list-item">
+                    <div class="text">
+                        <h4>Автоматизируйте скаутинг с помощью дронов</h4>
+                        <p>Система сама формирует <span>полётное задание</span>, дрон за минуты облетает всё поле, а после снимки распознаются нейросетям. Вы получаете точные данные по густоте культуры, составу сорняков и их фенофазам, выявляете проблемы на ранней стадии и сохраняете урожай. Один скаут без специальных навыков контролирует <span>до 15 000 га</span>, а квалифицированные агрономы фокусируются на принятии решений.</p>
+                    </div>
+                    <img src="assets/images/tehnology/1.png" alt="">
+                </li>
+                <li class="tehnology_list-item">
+                    <div class="text">
+                        <h4>Осмотры также со смартфона</h4>
+                        <p>Проводите <span>полевые осмотры</span> с помощью мобильного приложения, которое работает без интернета. Можно вносить данные вручную по настраиваемым шаблонам или делать фото для автоматического распознавания растений, вредителей и болезней нейросетями.</p>
+                    </div>
+                    <img src="assets/images/tehnology/2.png" alt="">
+                </li>
+                <li class="tehnology_list-item">
+                    <div class="text">
+                        <h4>Организуйте работу агрослужбы</h4>
+                        <p>Планируйте осмотры, гибко настраивайте шаблоны, назначайте исполнителей и контролируйте выполнение онлайн. Или доверьте всё системе — она сама создаст <span>задачи по триггерам</span>: от изменения NDVI и урожайности до прогнозов по болезням и вредителям.</p>
+                    </div>
+                    <img src="assets/images/tehnology/3.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="recognition">
+    <div class="container">
+        <h2 class="section_h2">Распознавание осмотров и точные <br>данные для принятия решений</h2>
+        <div class="section_description">Результаты осмотров распознаются нейросетями, чтобы превратить снимки в точные данные. <br>Это позволяет по ходу сезона получать полную картину по каждому полю в цифрах и вовремя <br>принимать обоснованные решения.</div>
+        <div class="mt64">
+            <div class="recognition_item">
+                <div class="recognition_item-text">
+                    <h4>Контроль засорённости полей</h4>
+                    <p>Нейросеть определяет фазу развития культур, состав и возраст сорняков, группируя их для принятия решений. Это помогает в ручном или автоматическом режиме подобрать наиболее эффективные гербициды и создать точные карты для дифференцированного внесения, экономя до 1000 рублей с гектара.</p>
+                </div>
+                <div class="recognition_item-wrapper">
+                    <ul class="recognition_item-slider">
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/1.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/2.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/3.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/4.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/5.png" alt=""></li>
+                    </ul>
+                    <button type="button" class="recognition-arrow left"></button>
+                    <button type="button" class="recognition-arrow right"></button>
+                    <div class="recognition-dots"></div>
+                </div>
+            </div>
+            <div class="recognition_item">
+                <div class="recognition_item-text">
+                    <h4>Контроль густоты посевов</h4>
+                    <p>Оценивайте качество сева, всхожесть, изменение густоты и формирование элементов продуктивности в течении вегетации в цифрах. Система подсчитывает равномерность всходов, двойники и пропуски, выявляя неоднородности посева. Вы получаете объективную информацию о реальном потенциале поля и данные для решений по корректировкам технологии или пересеву.</p>
+                </div>
+                <div class="recognition_item-wrapper">
+                    <ul class="recognition_item-slider">
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/1.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/2.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/3.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/4.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/5.png" alt=""></li>
+                    </ul>
+                    <button type="button" class="recognition-arrow left"></button>
+                    <button type="button" class="recognition-arrow right"></button>
+                    <div class="recognition-dots"></div>
+                </div>
+            </div>
+            <div class="recognition_item">
+                <div class="recognition_item-text">
+                    <h4>Распознавание вредителей</h4>
+                    <p>Контролируйте динамику и циклы развития вредителей. Сфотографируйте феромонную ловушку или установите автоматические, а нейросеть распознает и подсчитает насекомых. Это поможет получать рекомендации и вовремя применять защиту.</p>
+                </div>
+                <div class="recognition_item-wrapper">
+                    <ul class="recognition_item-slider">
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/1.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/2.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/3.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/4.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/5.png" alt=""></li>
+                    </ul>
+                    <button type="button" class="recognition-arrow left"></button>
+                    <button type="button" class="recognition-arrow right"></button>
+                    <div class="recognition-dots"></div>
+                </div>
+            </div>
+            <div class="recognition_item">
+                <div class="recognition_item-text">
+                    <h4>Распознавание болезней</h4>
+                    <p>Диагностируйте болезни растений прямо в поле, сделав фото на смартфон. Нейросеть определит болезнь и оценит степень повреждений.</p>
+                </div>
+                <div class="recognition_item-wrapper">
+                    <ul class="recognition_item-slider">
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/1.png" alt=""></li>
+                    </ul>
+                    <button type="button" class="recognition-arrow left"></button>
+                    <button type="button" class="recognition-arrow right"></button>
+                    <div class="recognition-dots"></div>
+                </div>
+            </div>
+            <div class="recognition_item">
+                <div class="recognition_item-text">
+                    <h4>Определение структуры урожая и расчет биологической урожайности</h4>
+                    <p>Система позволяет ускорить процессы предуборочных полевых наблюдений: определять озерненность корзинок и початков по фото, автоматически рассчитывать урожайность на основе полученных данных: густоты посева, влажности зерна и массы 1000 семян</p>
+                </div>
+                <div class="recognition_item-wrapper">
+                    <ul class="recognition_item-slider">
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/1.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/2.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/3.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/4.png" alt=""></li>
+                        <li class="recognition_item-slide"><img src="assets/images/recognition/5.png" alt=""></li>
+                    </ul>
+                    <button type="button" class="recognition-arrow left"></button>
+                    <button type="button" class="recognition-arrow right"></button>
+                    <div class="recognition-dots"></div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-center mt64">
+            <a href="#try" class="btn go-to">Попробовать бесплатно <img src="assets/images/arrow-button.svg" alt="" /></a>
+        </div>
+    </div>
+</section>
+<section class="automatic">
+    <div class="container">
+        <h2 class="section_h2">Автоматические рекомендации по обработкам</h2>
+        <div class="section_description">Система сама подбирает средства защиты, нормы и сроки обработки <br>на основе данных осмотров и распознавания.</div>
+        <div class="mt64">
+            <ul class="automatic_list">
+                <li class="automatic_list-item">
+                    <div class="text">
+                        <h4>План обработки для каждого поля</h4>
+                        <p>На основе данных скаутинга система формирует готовый, экономически обоснованный <span>план обработки</span>. Он учитывает состав сорняков, их фазу, ЭПВ, а также препараты и технологии, которые вы используете. Вы <span>экономите СЗР</span> за счёт обоснованного применения, снижая гербицидную нагрузку и повышая урожайность.</p>
+                    </div>
+                    <img src="assets/images/automatic/1.png" alt="">
+                </li>
+                <li class="automatic_list-item">
+                    <div class="text">
+                        <h4>Контроль эффективности обработок</h4>
+                        <p>Повторный осмотр фиксирует угнетённые сорняки и повреждённые растения. Платформа рассчитывает <span>фактическую эффективность</span> и показывает, какие риски ещё остаются.</p>
+                    </div>
+                    <img src="assets/images/automatic/2.png" alt="">
+                </li>
+                <li class="automatic_list-item">
+                    <div class="text">
+                        <h4>Дифференцированное внесение СЗР</h4>
+                        <p>По карте засорённости формируется схема <span>дифференцированного внесения</span> для дрона с разными нормами и смесями для каждой зоны. Экономия СЗР — до 1000 ₽ на гектар.</p>
+                    </div>
+                    <img src="assets/images/automatic/3.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="control-index once">
+    <div class="container">
+        <h2 class="section_h2">Больше возможностей платформы</h2>
+        <div class="control-wrpper mt64">
+            <h2 class="section_h2">Производственный модуль</h2>
+            <div class="section_description">Управление сельхозпроизводством, <span>учёт и эффективное использование ресурсов</span> в одном <br>окне с агрономией и точным земледелием.</div>
+            <div class="mt24">
+                <div class="btn-center">
+                    <a href="news.html" class="btn grey">Узнать подробнее <img src="assets/images/arrow-button-black.svg" alt="" /></a>
+                </div>
+            </div>
+
+            <div class="slider control-slider fms mt32">
+                <div class="slider__text">
+                    <img src="/assets/images/fms-hero-l.png" alt="" class="hero-small l" />
+                    <img src="/assets/images/fms-hero.png" alt="" class="hero mt24" />
+                    <img src="/assets/images/fms-hero-r.png" alt="" class="hero-small r" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cases">
+    <div class="container">
+        <h2 class="section_h2">Клиентские кейсы</h2>
+        <div class="section_description">Реальные примеры: кто уже использует и какие результаты получил.</div>
+    </div>
+    <div class="cases_over">
+        <div class="container">
+            <div class="mt64">
+                <div class="cases_wrapper">
+                    <ul class="cases_slider">
+                        <li class="cases_slider-item">
+                            <div class="cases_slider-company">
+                                <div class="logo"></div>
+                                <div class="name">
+                                    <span>Компания</span>
+                                    РусАгро
+                                </div>
+                            </div>
+                            <div class="cases_slider-name">
+                                <div class="name">Иван Иванов,</div>
+                                <div class="post">управляющий компании</div>
+                            </div>
+                            <div class="cases_slider-stars">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                            </div>
+                            <div class="cases_slider-text">
+                                Используем 10 лет, получили прирос к параметру 1 и параметру 2 вдвое. В количественных показателях и качественных произошел положительный рост.
+                            </div>
+                        </li>
+                        <li class="cases_slider-item">
+                            <div class="cases_slider-company">
+                                <div class="logo"></div>
+                                <div class="name">
+                                    <span>Компания</span>
+                                    РусАгро
+                                </div>
+                            </div>
+                            <div class="cases_slider-name">
+                                <div class="name">Иван Иванов,</div>
+                                <div class="post">управляющий компании</div>
+                            </div>
+                            <div class="cases_slider-stars">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                            </div>
+                            <div class="cases_slider-text">
+                                Используем 10 лет, получили прирос к параметру 1 и параметру 2 вдвое. В количественных показателях и качественных произошел положительный рост.
+                            </div>
+                        </li>
+                        <li class="cases_slider-item">
+                            <div class="cases_slider-company">
+                                <div class="logo"></div>
+                                <div class="name">
+                                    <span>Компания</span>
+                                    РусАгро
+                                </div>
+                            </div>
+                            <div class="cases_slider-name">
+                                <div class="name">Иван Иванов,</div>
+                                <div class="post">управляющий компании</div>
+                            </div>
+                            <div class="cases_slider-stars">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                                <img src="assets/images/star.svg" alt="">
+                            </div>
+                            <div class="cases_slider-text">
+                                Используем 10 лет, получили прирос к параметру 1 и параметру 2 вдвое. В количественных показателях и качественных произошел положительный рост.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="cases-arrow left"></button>
+                <button type="button" class="cases-arrow right"></button>
+            </div>
+        </div>
+    </div>
+    <div class="mt36 cases-dots"></div>
+</section>
+<section class="dop">
+    <div class="container">
+        <h2 class="section_h2">Дополнительные возможности</h2>
+        <div class="section_description">Еще больше агрономических инструментов в платформе — от работы с агроопытами <br>до построения оптимальных маршрутов между и внутри полей.</div>
+        <div class="mt64">
+            <ul class="dop_list">
+                <li class="dop_item">
+                    <h5>Агроопыты</h5>
+                    <div class="text">Делянки на однородных участках, шаблоны замеров и готовые отчёты для анализа.</div>
+                    <img src="assets/images/dop/1.png" alt="">
+                </li>
+                <li class="dop_item">
+                    <h5>Устойчивые зоны продуктивности</h5>
+                    <div class="text">Карты устойчивой многолетней продуктивности полей по NDVI.</div>
+                    <img src="assets/images/dop/2.png" alt="">
+                </li>
+                <li class="dop_item">
+                    <h5>Расчет объёма кагата с БПЛА</h5>
+                    <div class="text">Автоматический облёт кагата, построение 3D-модели и расчёт объёма.</div>
+                    <img src="assets/images/dop/3.png" alt="">
+                </li>
+                <li class="dop_item">
+                    <h5>Отбор и загрузка АХО</h5>
+                    <div class="text">Планируйте точки отбора, загружайте результаты и стройте карты плодородия.</div>
+                    <img src="assets/images/dop/4.png" alt="">
+                </li>
+                <li class="dop_item">
+                    <h5>Карты диф. внесения</h5>
+                    <div class="text">Построение карт-заданий для диф. внесения семян, удобрений и СЗР.</div>
+                    <img src="assets/images/dop/5.png" alt="">
+                </li>
+                <li class="dop_item">
+                    <h5>ИИ-анализ спутниковых снимков</h5>
+                    <div class="text">Модели для определения контуров и урожайности всех полей в РФ.</div>
+                    <img src="assets/images/dop/6.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="form green-bg-lines " id="try">
+    <div class="container">
+        <h2 class="section_h2">Хотите узнать больше?</h2>
+        <div class="section_description">Пришлем презентацию, проведем демонстрацию решения<br> и ответим на все вопросы</div>
+        <div class="form-wrapper mt58">
+            <div class="res">
+                <div class="res-error">
+                    <div class="icon">
+                        <img src="assets/images/form-error.svg" alt="">
+                    </div>
+                    <div class="title">Форма не отправлена</div>
+                    <div class="text">Повторите отправку позже <br>или свяжитесь с нами по номеру <br>телефона +7 (495) 788-59-56</div>
+                </div>
+                <div class="res-success">
+                    <div class="icon">
+                        <img src="assets/images/form-success.svg" alt="">
+                    </div>
+                    <div class="title">Форма успешно отправлена</div>
+                    <div class="text">Менеджер нашей компании <br>скоро свяжется с вами</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <input name="f_name" type="text" placeholder="ФИО *" autocomplete="off">
+                <div class="error-label">Обязательно для заполнения</div>
+            </div>
+            <div class="form-item">
+                <input name="f_phone" class="phone-mask" type="text" placeholder="Телефон *" autocomplete="off" inputmode="text">
+                <div class="error-label">Обязательно для заполнения</div>
+            </div>
+            <div class="form-item">
+                <input name="f_email" class="email-mask" type="text" placeholder="Рабочая почта *" autocomplete="off" inputmode="text">
+                <div class="error-label">Обязательно для заполнения</div>
+            </div>
+            <div class="form-item button">
+                <button type="submit" class="btn" id="test">Отправить заявку <img src="assets/images/arrow-button.svg" alt=""></button>
+            </div>
+            <div class="form-item personal">Отправляя заявку вы соглашаетесь на <a href="#">Обработку персональных данных</a></div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer pt150 ">
+    <div class="container ">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper-info">
+                <div class="footer__wrapper-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.svg" alt="">
+                        <span>История поля</span>
+                    </a>
+                </div>
+                <div class="footer__wrapper-copyright">
+                    ©2024, ООО «ГеомирАгро»
+                </div>
+            </div>
+            <div class="footer__wrapper-navigation">
+                <div class="footer__navigation">
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <span>Материалы</span>
+                            <ul>
+                                <li><a href="#">Руководство <br>пользователя</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <span>Компания</span>
+                            <ul>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="dealers.html">Партнёры</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <span>Другое</span>
+                            <ul>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts mt150">
+                    <div class="footer__contacts-phone">
+                        <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+                    </div>
+                    <div class="footer__contacts-email">
+                        <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+                    </div>
+                    <div class="footer__contacts-social">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="assets/images/yt.svg" alt=""></a></li>
+                            <li><a href="#" target="_blank"><img src="assets/images/tg.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__mobile mt150">
+            <div class="footer__mobile-social">
+                <ul>
+                    <li><a href="#" target="_blank"><img src="assets/images/yt.svg" alt=""></a></li>
+                    <li><a href="#" target="_blank"><img src="assets/images/tg.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer__mobile-phone">
+                <a href="tel:+74957885956">+7 (495) 788-59-56</a>
+            </div>
+            <div class="footer__mobile-email">
+                <a href="mailto:info@agrohistory.ru?subject=Письмо с сайта История поля">info@agrohistory.ru</a>
+            </div>
+            <div class="footer__mobile-copyright">
+                ©2024, ООО «ГеомирАгро»
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="overlay">
+    <div class="modal-block" id="video">
+        <a href="#" class="closemodal">
+            <img src="assets/images/cancel-white.svg" alt="" />
+        </a>
+        <div class="video-wrapper" id="videocontainer">
+            
+        </div>
+    </div>
+    <!-- <div class="modal-block" id="bid">
+        <a href="#" class="closemodal">
+            <img src="assets/images/cancel.svg" alt="" />
+        </a>
+        <div class="block-title">
+            <h2>Получить бесплатный доступ</h2>
+            <p>Настроим тестовый доступ для вашей компании <br />с учётом потребностей бизнеса</p>
+        </div>
+        <div class="form">
+            <div class="res">
+                <div class="res-error">
+                    <div class="icon">
+                        <img src="assets/images/form-error.svg" alt="" />
+                    </div>
+                    <div class="title">Форма не отправлена</div>
+                    <div class="text">Повторите отправку позже <br />или свяжитесь с нами по номеру <br />телефона +7 (495) 788-59-56</div>
+                </div>
+                <div class="res-success">
+                    <div class="icon">
+                        <img src="assets/images/form-success.svg" alt="" />
+                    </div>
+                    <div class="title">Форма успешно отправлена</div>
+                    <div class="text">Менеджер нашей компании <br />скоро свяжется с вами</div>
+                </div>
+            </div>
+            <div class="form-item">
+                <input name="f_name" type="text" placeholder="ФИО *" autocomplete="off" />
+                <div class="error-label">ФИО обязательно</div>
+            </div>
+            <div class="form-item">
+                <input name="f_email" class="email-input" type="text" placeholder="Ваша электронная почта *" autocomplete="off" />
+                <div class="error-label">Email обязательно</div>
+            </div>
+            <div class="form-item button">
+                <button type="submit" class="btn">Отправить заявку <img src="assets/images/arrow-button.svg" alt="" /></button>
+            </div>
+            <div class="form-item yes">Нажимая на кнопку вы соглашаетесь с политикой <a href="#">обработки персональных данных</a></div>
+        </div>
+    </div> -->
+</div>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/flexmenu.min.js"></script>
+<script src="assets/js/lightcase.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.maskedinput.min.js"></script>
+<script src="assets/js/splide-extension-auto-scroll.min.js"></script>
+<script src="assets/js/splide.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
