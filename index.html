@@ -138,7 +138,7 @@
             <div class="navigation">
                 <a href="index.html" class="logo">
                     <img src="assets/images/logo.svg" alt="">
-                    <span>История поля</span>
+                    <span>АссистАгро</span>
                 </a>
                 <nav>
                     <ul class="navigation__nav">
@@ -727,7 +727,11 @@
     </div>
 </section>
 <section class="control-index mt128">
-    <div class="container">
+	<div class="container">
+		<h2 class="section_h2">Решения</h2>
+        <div class="section_description">Функциональные направления единой платформы</div>
+	</div>
+    <div class="container mt64">
         <div class="control-wrpper">
             <div>
                 <h2 class="section_h2">Умная Агрономия</h2>
@@ -903,6 +907,9 @@
                     <div class="title">Форма успешно отправлена</div>
                     <div class="text">Менеджер нашей компании <br>скоро свяжется с вами</div>
                 </div>
+                <div class="res-loader">
+                    <div class="icon"></div>
+                </div>
             </div>
             <div class="form-item">
                 <input name="f_name" type="text" placeholder="ФИО *" autocomplete="off">
@@ -916,10 +923,16 @@
                 <input name="f_email" class="email-mask" type="text" placeholder="Рабочая почта *" autocomplete="off" inputmode="text">
                 <div class="error-label">Обязательно для заполнения</div>
             </div>
+            <div class="form-item personal">
+                <label>
+                    <input type="checkbox" name="yes" required>
+                    <span></span>
+                </label>
+                <span class="op">Даю согласие на обработку указанных персональных данных согласно <a href="#">Политике</a></span>
+            </div>
             <div class="form-item button">
                 <button type="submit" class="btn" id="test">Отправить заявку <img src="assets/images/arrow-button.svg" alt=""></button>
             </div>
-            <div class="form-item personal">Отправляя заявку вы соглашаетесь на <a href="#">Обработку персональных данных</a></div>
         </div>
     </div>
 </section>
@@ -931,8 +944,9 @@
                 <div class="footer__wrapper-logo">
                     <a href="index.html" class="logo">
                         <img src="assets/images/logo.svg" alt="">
-                        <span>История поля</span>
+                        <span>АссистАгро</span>
                     </a>
+					<div class="reestr">№13013 в <a href="https://reestr.digital.gov.ru/reestr/557760/?sphrase_id=11165521" target="_blank">Реестре российского ПО</a></div>
                 </div>
                 <div class="footer__wrapper-copyright">
                     ©2024, ООО «ГеомирАгро»
@@ -1049,6 +1063,52 @@
         </div>
     </div> -->
 </div>
+<div id="cookie-consent-banner" class="cookie-consent-banner cookie-consent-bottom cookie-consent-preset-default" style="display: block; z-index: 9999; opacity: 0.9; border-radius: 8px; padding: 20px; font-size: 14px;">
+			
+    <div class="cookie-consent-content ">
+        <div class="cookie-consent-text">
+            Мы используем файлы cookie, чтобы сделать работу с сайтом удобнее. Продолжая находиться на нашем сайте, вы соглашаетесь с 
+            <a href="/politika-konfidentsialnosti/" target="_blank" class="cookie-consent-privacy-link">Политикой конфиденциальности</a>
+        </div>
+        <div class="cookie-consent-buttons">
+            <button type="button" class="cookie-consent-btn cookie-consent-accept-btn" data-action="accept" style="border-radius: 4px;">Принять</button>
+            
+            <button type="button" class="cookie-consent-btn cookie-consent-decline-btn" data-action="decline" style="border-radius: 4px;"></button>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="cookie-notification">
+    <noindex>
+        <h5>Настроить Cookies</h5>
+        <p>На сайте используются Cookies-файлы для улучшения работы</p>
+        <div class="cookie-actions">
+            <a href="#" onclick="openSettings()">Настроить Cookies</a>
+            <div class="cookie-buttons">
+                <a href="#">Отклонить все</a>
+                <a href="#">Принять все</a>
+            </div>
+        </div>
+    </noindex>
+</div>
+
+<script>
+function openSettings() {
+    const userAgent = navigator.userAgent;
+
+    if (userAgent.includes("Chrome")) {
+        window.open("chrome://settings/content/cookies", "_blank");
+    } else if (userAgent.includes("Firefox")) {
+        window.open("about:preferences#privacy", "_blank");
+    } else if (userAgent.includes("Safari")) {
+        window.open("safari://preferences/privacy", "_blank");
+    } else if (userAgent.includes("Edge")) {
+        window.open("edge://settings/content/cookies", "_blank");
+    } else {
+        alert("Пожалуйста, проверьте настройки куков в вашем браузере.");
+    }
+}
+</script> -->
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/flexmenu.min.js"></script>

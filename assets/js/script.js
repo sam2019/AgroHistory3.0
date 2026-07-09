@@ -417,7 +417,7 @@ $(document).ready(function() {
         }
     });
 
-    $('.js-form').on('click', function() {
+    $('#test').on('click', function() {
         var form = $(this).parents('form'),
             wrapper = form.find('.form-wrapper');
             action = form.attr('action'),
@@ -430,6 +430,8 @@ $(document).ready(function() {
             block_mail.addClass('error');
         }
         else {
+            wrapper.addClass('answer');
+            wrapper.find('.res-loader').addClass('show');
             $.ajax({
                 type: method,
                 url: action,
